@@ -1,0 +1,2005 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/home/earlgibe/.nvm/versions/node/v20.19.0/bin/node',
+1 verbose cli   '/home/earlgibe/.nvm/versions/node/v20.19.0/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'mongodb'
+1 verbose cli ]
+2 info using npm@1.4.2
+3 info using node@v20.19.0
+4 verbose cache add [ 'mongodb', null ]
+5 verbose cache add name=undefined spec="mongodb" args=["mongodb",null]
+6 verbose parsed url Url {
+6 verbose parsed url   protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'mongodb',
+6 verbose parsed url   path: 'mongodb',
+6 verbose parsed url   href: 'mongodb'
+6 verbose parsed url }
+7 silly lockFile 7f1c982e-mongodb mongodb
+8 verbose lock mongodb /home/earlgibe/.npm/7f1c982e-mongodb.lock
+9 silly lockFile 7f1c982e-mongodb mongodb
+10 silly lockFile 7f1c982e-mongodb mongodb
+11 verbose addNamed [ 'mongodb', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 886df635-mongodb mongodb@
+14 verbose lock mongodb@ /home/earlgibe/.npm/886df635-mongodb.lock
+15 silly addNameRange { name: 'mongodb', range: '*', hasData: false }
+16 verbose url raw mongodb
+17 verbose url resolving [ 'https://registry.npmjs.org/', './mongodb' ]
+18 verbose url resolved https://registry.npmjs.org/mongodb
+19 info trying registry request attempt 1 at 12:58:40 PM
+20 http GET https://registry.npmjs.org/mongodb
+21 http 200 https://registry.npmjs.org/mongodb
+22 silly registry.get cb [
+22 silly registry.get   200,
+22 silly registry.get   {
+22 silly registry.get     date: 'Mon, 14 Jul 2025 10:58:40 GMT',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'content-length': '3273493',
+22 silly registry.get     connection: 'keep-alive',
+22 silly registry.get     'cf-ray': '95f0819b4c7eea62-FCO',
+22 silly registry.get     'cf-cache-status': 'HIT',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     'access-control-allow-origin': '*',
+22 silly registry.get     age: '73',
+22 silly registry.get     'cache-control': 'public, max-age=300',
+22 silly registry.get     etag: '"adc01f9fecce23375c299415db2fb321"',
+22 silly registry.get     'last-modified': 'Fri, 11 Jul 2025 00:18:36 GMT',
+22 silly registry.get     vary: 'accept-encoding, accept',
+22 silly registry.get     'set-cookie': [
+22 silly registry.get       '_cfuvid=j6KOMaMO.5NKn4zhqXyCIqg0uwRV9e6_FQdu58J0qZU-1752490720552-0.0.1.1-604800000; path=/; domain=.npmjs.org; HttpOnly; Secure; SameSite=None'
+22 silly registry.get     ],
+22 silly registry.get     server: 'cloudflare'
+22 silly registry.get   }
+22 silly registry.get ]
+23 silly addNameRange number 2 { name: 'mongodb', range: '*', hasData: true }
+24 silly addNameRange versions [
+24 silly addNameRange   'mongodb',
+24 silly addNameRange   [
+24 silly addNameRange     '0.9.4',     '0.9.4-4',    '0.9.3',     '0.9.1',     '0.9.2',
+24 silly addNameRange     '0.9.6-7',   '0.9.6-8',    '0.9.6-9',   '0.9.6-10',  '0.9.6-11',
+24 silly addNameRange     '0.9.6-12',  '0.9.6-13',   '0.9.6-14',  '0.9.6-15',  '0.9.6-16',
+24 silly addNameRange     '0.9.6-17',  '0.9.6-18',   '0.9.6-19',  '0.9.6-20',  '0.9.6-21',
+24 silly addNameRange     '0.9.6-22',  '0.9.6-23',   '0.9.7',     '0.9.7-0',   '0.9.7-1',
+24 silly addNameRange     '0.9.7-1.1', '0.9.7-1.2',  '0.9.7-1.3', '0.9.7-1.4', '0.9.7-2',
+24 silly addNameRange     '0.9.7-2-1', '0.9.7-2-2',  '0.9.7-2-3', '0.9.7-2-4', '0.9.7-2-5',
+24 silly addNameRange     '0.9.7-3',   '0.9.7-3-1',  '0.9.7-3-2', '0.9.7-3-3', '0.9.7-3-4',
+24 silly addNameRange     '0.9.7-3-5', '0.9.8',      '0.9.8-1',   '0.9.8-2',   '0.9.8-3',
+24 silly addNameRange     '0.9.8-4',   '0.9.8-5',    '0.9.8-6',   '0.9.8-7',   '0.9.9',
+24 silly addNameRange     '0.9.9-1',   '0.9.9-2',    '0.9.9-3',   '0.9.9-4',   '0.9.9-5',
+24 silly addNameRange     '0.9.9-6',   '0.9.9-7',    '0.9.9-8',   '1.0.0',     '1.0.1',
+24 silly addNameRange     '1.0.2',     '1.1.0-beta', '1.1.0',     '1.1.1',     '1.1.2',
+24 silly addNameRange     '1.1.3',     '1.1.4',      '1.1.5',     '1.1.6',     '1.1.7',
+24 silly addNameRange     '1.1.8',     '1.1.9',      '1.1.10',    '1.1.11',    '1.2.0',
+24 silly addNameRange     '1.2.1',     '1.2.2',      '1.2.3',     '1.2.4',     '1.2.5',
+24 silly addNameRange     '1.2.6',     '1.2.7',      '1.2.8',     '1.2.9',     '1.2.10',
+24 silly addNameRange     '1.2.11',    '1.2.12',     '1.2.13',    '1.2.14',    '1.3.0',
+24 silly addNameRange     '1.3.1',     '1.3.2',      '1.3.3',     '1.3.4',     '1.3.5',
+24 silly addNameRange     '1.3.6',     '1.3.7',      '1.3.8',     '1.3.9',     '1.3.10',
+24 silly addNameRange     ... 581 more items
+24 silly addNameRange   ]
+24 silly addNameRange ]
+25 verbose addNamed [ 'mongodb', '6.17.0' ]
+26 verbose addNamed [ '6.17.0', '6.17.0' ]
+27 silly lockFile 302449b7-mongodb-6-17-0 mongodb@6.17.0
+28 verbose lock mongodb@6.17.0 /home/earlgibe/.npm/302449b7-mongodb-6-17-0.lock
+29 silly lockFile bae96cfc-s-org-mongodb-mongodb-6-17-0-tgz https://registry.npmjs.org/mongodb/-/mongodb-6.17.0.tgz
+30 verbose lock https://registry.npmjs.org/mongodb/-/mongodb-6.17.0.tgz /home/earlgibe/.npm/bae96cfc-s-org-mongodb-mongodb-6-17-0-tgz.lock
+31 verbose addRemoteTarball [
+31 verbose addRemoteTarball   'https://registry.npmjs.org/mongodb/-/mongodb-6.17.0.tgz',
+31 verbose addRemoteTarball   'b52da4e3cdf62299e55c51584cb5657283157594'
+31 verbose addRemoteTarball ]
+32 info retry fetch attempt 1 at 12:58:41 PM
+33 verbose fetch to= /home/earlgibe/tmp/npm-3098-WYxcRVLh/1752490721888-0.041016900088800545/tmp.tgz
+34 http GET https://registry.npmjs.org/mongodb/-/mongodb-6.17.0.tgz
+35 http 200 https://registry.npmjs.org/mongodb/-/mongodb-6.17.0.tgz
+36 verbose tar unpack /home/earlgibe/tmp/npm-3098-WYxcRVLh/1752490721888-0.041016900088800545/tmp.tgz
+37 silly lockFile 8fcb61e0-888-0-041016900088800545-package tar:///home/earlgibe/tmp/npm-3098-WYxcRVLh/1752490721888-0.041016900088800545/package
+38 verbose lock tar:///home/earlgibe/tmp/npm-3098-WYxcRVLh/1752490721888-0.041016900088800545/package /home/earlgibe/.npm/8fcb61e0-888-0-041016900088800545-package.lock
+39 silly lockFile c1cebbdd-888-0-041016900088800545-tmp-tgz tar:///home/earlgibe/tmp/npm-3098-WYxcRVLh/1752490721888-0.041016900088800545/tmp.tgz
+40 verbose lock tar:///home/earlgibe/tmp/npm-3098-WYxcRVLh/1752490721888-0.041016900088800545/tmp.tgz /home/earlgibe/.npm/c1cebbdd-888-0-041016900088800545-tmp-tgz.lock
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry lib/cursor/abstract_cursor.js
+43 silly gunzTarPerm extractEntry lib/admin.js
+44 silly gunzTarPerm extractEntry lib/operations/aggregate.js
+45 silly gunzTarPerm extractEntry lib/cursor/aggregation_cursor.js
+46 silly gunzTarPerm extractEntry lib/cmap/auth/auth_provider.js
+47 silly gunzTarPerm extractEntry lib/client-side-encryption/auto_encrypter.js
+48 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/automated_callback_workflow.js
+49 silly gunzTarPerm extractEntry lib/cmap/auth/aws_temporary_credentials.js
+50 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/aws.js
+51 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/azure_machine_workflow.js
+52 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/azure.js
+53 silly gunzTarPerm extractEntry lib/beta.js
+54 silly gunzTarPerm extractEntry lib/bson.js
+55 silly gunzTarPerm extractEntry lib/operations/bulk_write.js
+56 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/callback_workflow.js
+57 silly gunzTarPerm extractEntry lib/cursor/change_stream_cursor.js
+58 silly gunzTarPerm extractEntry lib/change_stream.js
+59 silly gunzTarPerm extractEntry lib/cursor/client_bulk_write_cursor.js
+60 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/client_bulk_write.js
+61 silly gunzTarPerm extractEntry lib/client-side-encryption/client_encryption.js
+62 silly gunzTarPerm extractEntry lib/cmap/handshake/client_metadata.js
+63 silly gunzTarPerm extractEntry lib/collection.js
+64 silly gunzTarPerm extractEntry lib/operations/collections.js
+65 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/command_builder.js
+66 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/command_builders.js
+67 silly gunzTarPerm extractEntry lib/cmap/command_monitoring_events.js
+68 silly gunzTarPerm extractEntry lib/operations/command.js
+69 silly gunzTarPerm extractEntry lib/cmap/commands.js
+70 silly gunzTarPerm extractEntry lib/bulk/common.js
+71 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/common.js
+72 silly gunzTarPerm extractEntry lib/sdam/common.js
+73 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/compression.js
+74 silly gunzTarPerm extractEntry lib/cmap/connect.js
+75 silly gunzTarPerm extractEntry lib/cmap/connection_pool_events.js
+76 silly gunzTarPerm extractEntry lib/cmap/connection_pool.js
+77 silly gunzTarPerm extractEntry lib/connection_string.js
+78 silly gunzTarPerm extractEntry lib/cmap/connection.js
+79 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/constants.js
+80 silly gunzTarPerm extractEntry lib/constants.js
+81 silly gunzTarPerm extractEntry lib/operations/count.js
+82 silly gunzTarPerm extractEntry lib/operations/create_collection.js
+83 silly gunzTarPerm extractEntry lib/operations/search_indexes/create.js
+84 silly gunzTarPerm extractEntry lib/client-side-encryption/crypto_callbacks.js
+85 silly gunzTarPerm extractEntry lib/db.js
+86 silly gunzTarPerm extractEntry lib/operations/delete.js
+87 silly gunzTarPerm extractEntry lib/deps.js
+88 silly gunzTarPerm extractEntry lib/operations/distinct.js
+89 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/on_demand/document.js
+90 silly gunzTarPerm extractEntry lib/gridfs/download.js
+91 silly gunzTarPerm extractEntry lib/operations/drop.js
+92 silly gunzTarPerm extractEntry lib/operations/search_indexes/drop.js
+93 silly gunzTarPerm extractEntry lib/encrypter.js
+94 silly gunzTarPerm extractEntry lib/error.js
+95 silly gunzTarPerm extractEntry lib/client-side-encryption/errors.js
+96 silly gunzTarPerm extractEntry lib/cmap/errors.js
+97 silly gunzTarPerm extractEntry lib/operations/estimated_document_count.js
+98 silly gunzTarPerm extractEntry lib/sdam/events.js
+99 silly gunzTarPerm extractEntry lib/operations/execute_operation.js
+100 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/executor.js
+101 silly gunzTarPerm extractEntry lib/explain.js
+102 silly gunzTarPerm extractEntry lib/operations/find_and_modify.js
+103 silly gunzTarPerm extractEntry lib/cursor/find_cursor.js
+104 silly gunzTarPerm extractEntry lib/operations/find.js
+105 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/gcp_machine_workflow.js
+106 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/gcp.js
+107 silly gunzTarPerm extractEntry lib/operations/get_more.js
+108 silly gunzTarPerm extractEntry lib/cmap/auth/gssapi.js
+109 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/human_callback_workflow.js
+110 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/index.js
+111 silly gunzTarPerm extractEntry lib/gridfs/index.js
+112 silly gunzTarPerm extractEntry lib/index.js
+113 silly gunzTarPerm extractEntry lib/operations/indexes.js
+114 silly gunzTarPerm extractEntry lib/operations/insert.js
+115 silly gunzTarPerm extractEntry lib/operations/is_capped.js
+116 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/k8s_machine_workflow.js
+117 silly gunzTarPerm extractEntry lib/operations/kill_cursors.js
+118 silly gunzTarPerm extractEntry lib/cursor/list_collections_cursor.js
+119 silly gunzTarPerm extractEntry lib/operations/list_collections.js
+120 silly gunzTarPerm extractEntry lib/operations/list_databases.js
+121 silly gunzTarPerm extractEntry lib/cursor/list_indexes_cursor.js
+122 silly gunzTarPerm extractEntry lib/cursor/list_search_indexes_cursor.js
+123 silly gunzTarPerm extractEntry lib/cmap/metrics.js
+124 silly gunzTarPerm extractEntry lib/mongo_client_auth_providers.js
+125 silly gunzTarPerm extractEntry lib/mongo_client.js
+126 silly gunzTarPerm extractEntry lib/cmap/auth/mongo_credentials.js
+127 silly gunzTarPerm extractEntry lib/mongo_logger.js
+128 silly gunzTarPerm extractEntry lib/mongo_types.js
+129 silly gunzTarPerm extractEntry lib/client-side-encryption/mongocryptd_manager.js
+130 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_aws.js
+131 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc.js
+132 silly gunzTarPerm extractEntry lib/sdam/monitor.js
+133 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/on_data.js
+134 silly gunzTarPerm extractEntry lib/operations/operation.js
+135 silly gunzTarPerm extractEntry lib/operations/options_operation.js
+136 silly gunzTarPerm extractEntry lib/bulk/ordered.js
+137 silly gunzTarPerm extractEntry lib/cmap/auth/plain.js
+138 silly gunzTarPerm extractEntry etc/prepare.js
+139 silly gunzTarPerm extractEntry lib/operations/profiling_level.js
+140 silly gunzTarPerm extractEntry lib/cmap/auth/providers.js
+141 silly gunzTarPerm extractEntry lib/read_concern.js
+142 silly gunzTarPerm extractEntry lib/read_preference.js
+143 silly gunzTarPerm extractEntry lib/operations/remove_user.js
+144 silly gunzTarPerm extractEntry lib/operations/rename.js
+145 silly gunzTarPerm extractEntry lib/resource_management.js
+146 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/responses.js
+147 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/results_merger.js
+148 silly gunzTarPerm extractEntry lib/cursor/run_command_cursor.js
+149 silly gunzTarPerm extractEntry lib/operations/run_command.js
+150 silly gunzTarPerm extractEntry lib/cmap/auth/scram.js
+151 silly gunzTarPerm extractEntry lib/sdam/server_description.js
+152 silly gunzTarPerm extractEntry lib/sdam/server_selection_events.js
+153 silly gunzTarPerm extractEntry lib/sdam/server_selection.js
+154 silly gunzTarPerm extractEntry lib/sdam/server.js
+155 silly gunzTarPerm extractEntry lib/sessions.js
+156 silly gunzTarPerm extractEntry lib/operations/set_profiling_level.js
+157 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/shared.js
+158 silly gunzTarPerm extractEntry lib/sort.js
+159 silly gunzTarPerm extractEntry lib/sdam/srv_polling.js
+160 silly gunzTarPerm extractEntry lib/client-side-encryption/state_machine.js
+161 silly gunzTarPerm extractEntry lib/operations/stats.js
+162 silly gunzTarPerm extractEntry lib/cmap/stream_description.js
+163 silly gunzTarPerm extractEntry lib/timeout.js
+164 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/token_cache.js
+165 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/token_machine_workflow.js
+166 silly gunzTarPerm extractEntry lib/sdam/topology_description.js
+167 silly gunzTarPerm extractEntry lib/sdam/topology.js
+168 silly gunzTarPerm extractEntry lib/transactions.js
+169 silly gunzTarPerm extractEntry lib/bulk/unordered.js
+170 silly gunzTarPerm extractEntry lib/operations/search_indexes/update.js
+171 silly gunzTarPerm extractEntry lib/operations/update.js
+172 silly gunzTarPerm extractEntry lib/gridfs/upload.js
+173 silly gunzTarPerm extractEntry lib/utils.js
+174 silly gunzTarPerm extractEntry lib/operations/validate_collection.js
+175 silly gunzTarPerm extractEntry lib/write_concern.js
+176 silly gunzTarPerm extractEntry lib/cmap/auth/x509.js
+177 silly gunzTarPerm extractEntry package.json
+178 silly gunzTarPerm extractEntry tsconfig.json
+179 silly gunzTarPerm extractEntry lib/cursor/abstract_cursor.js.map
+180 silly gunzTarPerm extractEntry lib/admin.js.map
+181 silly gunzTarPerm extractEntry lib/operations/aggregate.js.map
+182 silly gunzTarPerm extractEntry lib/cursor/aggregation_cursor.js.map
+183 silly gunzTarPerm extractEntry lib/cmap/auth/auth_provider.js.map
+184 silly gunzTarPerm extractEntry lib/client-side-encryption/auto_encrypter.js.map
+185 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/automated_callback_workflow.js.map
+186 silly gunzTarPerm extractEntry lib/cmap/auth/aws_temporary_credentials.js.map
+187 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/aws.js.map
+188 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/azure_machine_workflow.js.map
+189 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/azure.js.map
+190 silly gunzTarPerm extractEntry lib/beta.js.map
+191 silly gunzTarPerm extractEntry lib/bson.js.map
+192 silly gunzTarPerm extractEntry lib/operations/bulk_write.js.map
+193 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/callback_workflow.js.map
+194 silly gunzTarPerm extractEntry lib/cursor/change_stream_cursor.js.map
+195 silly gunzTarPerm extractEntry lib/change_stream.js.map
+196 silly gunzTarPerm extractEntry lib/cursor/client_bulk_write_cursor.js.map
+197 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/client_bulk_write.js.map
+198 silly gunzTarPerm extractEntry lib/client-side-encryption/client_encryption.js.map
+199 silly gunzTarPerm extractEntry lib/cmap/handshake/client_metadata.js.map
+200 silly gunzTarPerm extractEntry lib/collection.js.map
+201 silly gunzTarPerm extractEntry lib/operations/collections.js.map
+202 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/command_builder.js.map
+203 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/command_builders.js.map
+204 silly gunzTarPerm extractEntry lib/cmap/command_monitoring_events.js.map
+205 silly gunzTarPerm extractEntry lib/operations/command.js.map
+206 silly gunzTarPerm extractEntry lib/cmap/commands.js.map
+207 silly gunzTarPerm extractEntry lib/bulk/common.js.map
+208 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/common.js.map
+209 silly gunzTarPerm extractEntry lib/sdam/common.js.map
+210 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/compression.js.map
+211 silly gunzTarPerm extractEntry lib/cmap/connect.js.map
+212 silly gunzTarPerm extractEntry lib/cmap/connection_pool_events.js.map
+213 silly gunzTarPerm extractEntry lib/cmap/connection_pool.js.map
+214 silly gunzTarPerm extractEntry lib/connection_string.js.map
+215 silly gunzTarPerm extractEntry lib/cmap/connection.js.map
+216 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/constants.js.map
+217 silly gunzTarPerm extractEntry lib/constants.js.map
+218 silly gunzTarPerm extractEntry lib/operations/count.js.map
+219 silly gunzTarPerm extractEntry lib/operations/create_collection.js.map
+220 silly gunzTarPerm extractEntry lib/operations/search_indexes/create.js.map
+221 silly gunzTarPerm extractEntry lib/client-side-encryption/crypto_callbacks.js.map
+222 silly gunzTarPerm extractEntry lib/db.js.map
+223 silly gunzTarPerm extractEntry lib/operations/delete.js.map
+224 silly gunzTarPerm extractEntry lib/deps.js.map
+225 silly gunzTarPerm extractEntry lib/operations/distinct.js.map
+226 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/on_demand/document.js.map
+227 silly gunzTarPerm extractEntry lib/gridfs/download.js.map
+228 silly gunzTarPerm extractEntry lib/operations/drop.js.map
+229 silly gunzTarPerm extractEntry lib/operations/search_indexes/drop.js.map
+230 silly gunzTarPerm extractEntry lib/encrypter.js.map
+231 silly gunzTarPerm extractEntry lib/error.js.map
+232 silly gunzTarPerm extractEntry lib/client-side-encryption/errors.js.map
+233 silly gunzTarPerm extractEntry lib/cmap/errors.js.map
+234 silly gunzTarPerm extractEntry lib/operations/estimated_document_count.js.map
+235 silly gunzTarPerm extractEntry lib/sdam/events.js.map
+236 silly gunzTarPerm extractEntry lib/operations/execute_operation.js.map
+237 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/executor.js.map
+238 silly gunzTarPerm extractEntry lib/explain.js.map
+239 silly gunzTarPerm extractEntry lib/operations/find_and_modify.js.map
+240 silly gunzTarPerm extractEntry lib/cursor/find_cursor.js.map
+241 silly gunzTarPerm extractEntry lib/operations/find.js.map
+242 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/gcp_machine_workflow.js.map
+243 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/gcp.js.map
+244 silly gunzTarPerm extractEntry lib/operations/get_more.js.map
+245 silly gunzTarPerm extractEntry lib/cmap/auth/gssapi.js.map
+246 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/human_callback_workflow.js.map
+247 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/index.js.map
+248 silly gunzTarPerm extractEntry lib/gridfs/index.js.map
+249 silly gunzTarPerm extractEntry lib/index.js.map
+250 silly gunzTarPerm extractEntry lib/operations/indexes.js.map
+251 silly gunzTarPerm extractEntry lib/operations/insert.js.map
+252 silly gunzTarPerm extractEntry lib/operations/is_capped.js.map
+253 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/k8s_machine_workflow.js.map
+254 silly gunzTarPerm extractEntry lib/operations/kill_cursors.js.map
+255 silly gunzTarPerm extractEntry lib/cursor/list_collections_cursor.js.map
+256 silly gunzTarPerm extractEntry lib/operations/list_collections.js.map
+257 silly gunzTarPerm extractEntry lib/operations/list_databases.js.map
+258 silly gunzTarPerm extractEntry lib/cursor/list_indexes_cursor.js.map
+259 silly gunzTarPerm extractEntry lib/cursor/list_search_indexes_cursor.js.map
+260 silly gunzTarPerm extractEntry lib/cmap/metrics.js.map
+261 silly gunzTarPerm extractEntry lib/mongo_client_auth_providers.js.map
+262 silly gunzTarPerm extractEntry lib/mongo_client.js.map
+263 silly gunzTarPerm extractEntry lib/cmap/auth/mongo_credentials.js.map
+264 silly gunzTarPerm extractEntry lib/mongo_logger.js.map
+265 silly gunzTarPerm extractEntry lib/mongo_types.js.map
+266 silly gunzTarPerm extractEntry lib/client-side-encryption/mongocryptd_manager.js.map
+267 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_aws.js.map
+268 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc.js.map
+269 silly gunzTarPerm extractEntry lib/sdam/monitor.js.map
+270 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/on_data.js.map
+271 silly gunzTarPerm extractEntry lib/operations/operation.js.map
+272 silly gunzTarPerm extractEntry lib/operations/options_operation.js.map
+273 silly gunzTarPerm extractEntry lib/bulk/ordered.js.map
+274 silly gunzTarPerm extractEntry lib/cmap/auth/plain.js.map
+275 silly gunzTarPerm extractEntry lib/operations/profiling_level.js.map
+276 silly gunzTarPerm extractEntry lib/cmap/auth/providers.js.map
+277 silly gunzTarPerm extractEntry lib/read_concern.js.map
+278 silly gunzTarPerm extractEntry lib/read_preference.js.map
+279 silly gunzTarPerm extractEntry lib/operations/remove_user.js.map
+280 silly gunzTarPerm extractEntry lib/operations/rename.js.map
+281 silly gunzTarPerm extractEntry lib/resource_management.js.map
+282 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/responses.js.map
+283 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/results_merger.js.map
+284 silly gunzTarPerm extractEntry lib/cursor/run_command_cursor.js.map
+285 silly gunzTarPerm extractEntry lib/operations/run_command.js.map
+286 silly gunzTarPerm extractEntry lib/cmap/auth/scram.js.map
+287 silly gunzTarPerm extractEntry lib/sdam/server_description.js.map
+288 silly gunzTarPerm extractEntry lib/sdam/server_selection_events.js.map
+289 silly gunzTarPerm extractEntry lib/sdam/server_selection.js.map
+290 silly gunzTarPerm extractEntry lib/sdam/server.js.map
+291 silly gunzTarPerm extractEntry lib/sessions.js.map
+292 silly gunzTarPerm extractEntry lib/operations/set_profiling_level.js.map
+293 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/shared.js.map
+294 silly gunzTarPerm extractEntry lib/sort.js.map
+295 silly gunzTarPerm extractEntry lib/sdam/srv_polling.js.map
+296 silly gunzTarPerm extractEntry lib/client-side-encryption/state_machine.js.map
+297 silly gunzTarPerm extractEntry lib/operations/stats.js.map
+298 silly gunzTarPerm extractEntry lib/cmap/stream_description.js.map
+299 silly gunzTarPerm extractEntry lib/timeout.js.map
+300 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/token_cache.js.map
+301 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/token_machine_workflow.js.map
+302 silly gunzTarPerm extractEntry lib/sdam/topology_description.js.map
+303 silly gunzTarPerm extractEntry lib/sdam/topology.js.map
+304 silly gunzTarPerm extractEntry lib/transactions.js.map
+305 silly gunzTarPerm extractEntry lib/bulk/unordered.js.map
+306 silly gunzTarPerm extractEntry lib/operations/search_indexes/update.js.map
+307 silly gunzTarPerm extractEntry lib/operations/update.js.map
+308 silly gunzTarPerm extractEntry lib/gridfs/upload.js.map
+309 silly gunzTarPerm extractEntry lib/utils.js.map
+310 silly gunzTarPerm extractEntry lib/operations/validate_collection.js.map
+311 silly gunzTarPerm extractEntry lib/write_concern.js.map
+312 silly gunzTarPerm extractEntry lib/cmap/auth/x509.js.map
+313 silly gunzTarPerm extractEntry LICENSE.md
+314 silly gunzTarPerm extractEntry README.md
+315 silly gunzTarPerm extractEntry src/cursor/abstract_cursor.ts
+316 silly gunzTarPerm extractEntry src/admin.ts
+317 silly gunzTarPerm extractEntry src/operations/aggregate.ts
+318 silly gunzTarPerm extractEntry src/cursor/aggregation_cursor.ts
+319 silly gunzTarPerm extractEntry src/cmap/auth/auth_provider.ts
+320 silly gunzTarPerm extractEntry src/client-side-encryption/auto_encrypter.ts
+321 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/automated_callback_workflow.ts
+322 silly gunzTarPerm extractEntry src/cmap/auth/aws_temporary_credentials.ts
+323 silly gunzTarPerm extractEntry src/client-side-encryption/providers/aws.ts
+324 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/azure_machine_workflow.ts
+325 silly gunzTarPerm extractEntry src/client-side-encryption/providers/azure.ts
+326 silly gunzTarPerm extractEntry lib/beta.d.ts
+327 silly gunzTarPerm extractEntry src/beta.ts
+328 silly gunzTarPerm extractEntry src/bson.ts
+329 silly gunzTarPerm extractEntry src/operations/bulk_write.ts
+330 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/callback_workflow.ts
+331 silly gunzTarPerm extractEntry src/cursor/change_stream_cursor.ts
+332 silly gunzTarPerm extractEntry src/change_stream.ts
+333 silly gunzTarPerm extractEntry src/cursor/client_bulk_write_cursor.ts
+334 silly gunzTarPerm extractEntry src/operations/client_bulk_write/client_bulk_write.ts
+335 silly gunzTarPerm extractEntry src/client-side-encryption/client_encryption.ts
+336 silly gunzTarPerm extractEntry src/cmap/handshake/client_metadata.ts
+337 silly gunzTarPerm extractEntry src/collection.ts
+338 silly gunzTarPerm extractEntry src/operations/collections.ts
+339 silly gunzTarPerm extractEntry src/operations/client_bulk_write/command_builder.ts
+340 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/command_builders.ts
+341 silly gunzTarPerm extractEntry src/cmap/command_monitoring_events.ts
+342 silly gunzTarPerm extractEntry src/operations/command.ts
+343 silly gunzTarPerm extractEntry src/cmap/commands.ts
+344 silly gunzTarPerm extractEntry src/bulk/common.ts
+345 silly gunzTarPerm extractEntry src/operations/client_bulk_write/common.ts
+346 silly gunzTarPerm extractEntry src/sdam/common.ts
+347 silly gunzTarPerm extractEntry src/cmap/wire_protocol/compression.ts
+348 silly gunzTarPerm extractEntry src/cmap/connect.ts
+349 silly gunzTarPerm extractEntry src/cmap/connection_pool_events.ts
+350 silly gunzTarPerm extractEntry src/cmap/connection_pool.ts
+351 silly gunzTarPerm extractEntry src/connection_string.ts
+352 silly gunzTarPerm extractEntry src/cmap/connection.ts
+353 silly gunzTarPerm extractEntry src/cmap/wire_protocol/constants.ts
+354 silly gunzTarPerm extractEntry src/constants.ts
+355 silly gunzTarPerm extractEntry src/operations/count.ts
+356 silly gunzTarPerm extractEntry src/operations/create_collection.ts
+357 silly gunzTarPerm extractEntry src/operations/search_indexes/create.ts
+358 silly gunzTarPerm extractEntry src/client-side-encryption/crypto_callbacks.ts
+359 silly gunzTarPerm extractEntry src/db.ts
+360 silly gunzTarPerm extractEntry src/operations/delete.ts
+361 silly gunzTarPerm extractEntry src/deps.ts
+362 silly gunzTarPerm extractEntry src/operations/distinct.ts
+363 silly gunzTarPerm extractEntry src/cmap/wire_protocol/on_demand/document.ts
+364 silly gunzTarPerm extractEntry src/gridfs/download.ts
+365 silly gunzTarPerm extractEntry src/operations/drop.ts
+366 silly gunzTarPerm extractEntry src/operations/search_indexes/drop.ts
+367 silly gunzTarPerm extractEntry src/encrypter.ts
+368 silly gunzTarPerm extractEntry src/error.ts
+369 silly gunzTarPerm extractEntry src/client-side-encryption/errors.ts
+370 silly gunzTarPerm extractEntry src/cmap/errors.ts
+371 silly gunzTarPerm extractEntry src/operations/estimated_document_count.ts
+372 silly gunzTarPerm extractEntry src/sdam/events.ts
+373 silly gunzTarPerm extractEntry src/operations/execute_operation.ts
+374 silly gunzTarPerm extractEntry src/operations/client_bulk_write/executor.ts
+375 silly gunzTarPerm extractEntry src/explain.ts
+376 silly gunzTarPerm extractEntry src/operations/find_and_modify.ts
+377 silly gunzTarPerm extractEntry src/cursor/find_cursor.ts
+378 silly gunzTarPerm extractEntry src/operations/find.ts
+379 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/gcp_machine_workflow.ts
+380 silly gunzTarPerm extractEntry src/client-side-encryption/providers/gcp.ts
+381 silly gunzTarPerm extractEntry src/operations/get_more.ts
+382 silly gunzTarPerm extractEntry src/cmap/auth/gssapi.ts
+383 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/human_callback_workflow.ts
+384 silly gunzTarPerm extractEntry src/client-side-encryption/providers/index.ts
+385 silly gunzTarPerm extractEntry src/gridfs/index.ts
+386 silly gunzTarPerm extractEntry src/index.ts
+387 silly gunzTarPerm extractEntry src/operations/indexes.ts
+388 silly gunzTarPerm extractEntry src/operations/insert.ts
+389 silly gunzTarPerm extractEntry src/operations/is_capped.ts
+390 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/k8s_machine_workflow.ts
+391 silly gunzTarPerm extractEntry src/operations/kill_cursors.ts
+392 silly gunzTarPerm extractEntry src/cursor/list_collections_cursor.ts
+393 silly gunzTarPerm extractEntry src/operations/list_collections.ts
+394 silly gunzTarPerm extractEntry src/operations/list_databases.ts
+395 silly gunzTarPerm extractEntry src/cursor/list_indexes_cursor.ts
+396 silly gunzTarPerm extractEntry src/cursor/list_search_indexes_cursor.ts
+397 silly gunzTarPerm extractEntry src/cmap/metrics.ts
+398 silly gunzTarPerm extractEntry src/mongo_client_auth_providers.ts
+399 silly gunzTarPerm extractEntry src/mongo_client.ts
+400 silly gunzTarPerm extractEntry src/cmap/auth/mongo_credentials.ts
+401 silly gunzTarPerm extractEntry src/mongo_logger.ts
+402 silly gunzTarPerm extractEntry src/mongo_types.ts
+403 silly gunzTarPerm extractEntry src/client-side-encryption/mongocryptd_manager.ts
+404 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_aws.ts
+405 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc.ts
+406 silly gunzTarPerm extractEntry mongodb.d.ts
+407 silly gunzTarPerm extractEntry src/sdam/monitor.ts
+408 silly gunzTarPerm extractEntry src/cmap/wire_protocol/on_data.ts
+409 silly gunzTarPerm extractEntry src/operations/operation.ts
+410 silly gunzTarPerm extractEntry src/operations/options_operation.ts
+411 silly gunzTarPerm extractEntry src/bulk/ordered.ts
+412 silly gunzTarPerm extractEntry src/cmap/auth/plain.ts
+413 silly gunzTarPerm extractEntry src/operations/profiling_level.ts
+414 silly gunzTarPerm extractEntry src/cmap/auth/providers.ts
+415 silly gunzTarPerm extractEntry src/read_concern.ts
+416 silly gunzTarPerm extractEntry src/read_preference.ts
+417 silly gunzTarPerm extractEntry src/operations/remove_user.ts
+418 silly gunzTarPerm extractEntry src/operations/rename.ts
+419 silly gunzTarPerm extractEntry src/resource_management.ts
+420 silly gunzTarPerm extractEntry src/cmap/wire_protocol/responses.ts
+421 silly gunzTarPerm extractEntry src/operations/client_bulk_write/results_merger.ts
+422 silly gunzTarPerm extractEntry src/cursor/run_command_cursor.ts
+423 silly gunzTarPerm extractEntry src/operations/run_command.ts
+424 silly gunzTarPerm extractEntry src/cmap/auth/scram.ts
+425 silly gunzTarPerm extractEntry src/sdam/server_description.ts
+426 silly gunzTarPerm extractEntry src/sdam/server_selection_events.ts
+427 silly gunzTarPerm extractEntry src/sdam/server_selection.ts
+428 silly gunzTarPerm extractEntry src/sdam/server.ts
+429 silly gunzTarPerm extractEntry src/sessions.ts
+430 silly gunzTarPerm extractEntry src/operations/set_profiling_level.ts
+431 silly gunzTarPerm extractEntry src/cmap/wire_protocol/shared.ts
+432 silly gunzTarPerm extractEntry src/sort.ts
+433 silly gunzTarPerm extractEntry src/sdam/srv_polling.ts
+434 silly gunzTarPerm extractEntry src/client-side-encryption/state_machine.ts
+435 silly gunzTarPerm extractEntry src/operations/stats.ts
+436 silly gunzTarPerm extractEntry src/cmap/stream_description.ts
+437 silly gunzTarPerm extractEntry src/timeout.ts
+438 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/token_cache.ts
+439 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/token_machine_workflow.ts
+440 silly gunzTarPerm extractEntry src/sdam/topology_description.ts
+441 silly gunzTarPerm extractEntry src/sdam/topology.ts
+442 silly gunzTarPerm extractEntry src/transactions.ts
+443 silly gunzTarPerm extractEntry src/bulk/unordered.ts
+444 silly gunzTarPerm extractEntry src/operations/search_indexes/update.ts
+445 silly gunzTarPerm extractEntry src/operations/update.ts
+446 silly gunzTarPerm extractEntry src/gridfs/upload.ts
+447 silly gunzTarPerm extractEntry src/utils.ts
+448 silly gunzTarPerm extractEntry src/operations/validate_collection.ts
+449 silly gunzTarPerm extractEntry src/write_concern.ts
+450 silly gunzTarPerm extractEntry src/cmap/auth/x509.ts
+451 silly lockFile 8fcb61e0-888-0-041016900088800545-package tar:///home/earlgibe/tmp/npm-3098-WYxcRVLh/1752490721888-0.041016900088800545/package
+452 silly lockFile 8fcb61e0-888-0-041016900088800545-package tar:///home/earlgibe/tmp/npm-3098-WYxcRVLh/1752490721888-0.041016900088800545/package
+453 silly lockFile c1cebbdd-888-0-041016900088800545-tmp-tgz tar:///home/earlgibe/tmp/npm-3098-WYxcRVLh/1752490721888-0.041016900088800545/tmp.tgz
+454 silly lockFile c1cebbdd-888-0-041016900088800545-tmp-tgz tar:///home/earlgibe/tmp/npm-3098-WYxcRVLh/1752490721888-0.041016900088800545/tmp.tgz
+455 verbose tar pack [
+455 verbose tar pack   '/home/earlgibe/.npm/mongodb/6.17.0/package.tgz',
+455 verbose tar pack   '/home/earlgibe/tmp/npm-3098-WYxcRVLh/1752490721888-0.041016900088800545/package'
+455 verbose tar pack ]
+456 verbose tarball /home/earlgibe/.npm/mongodb/6.17.0/package.tgz
+457 verbose folder /home/earlgibe/tmp/npm-3098-WYxcRVLh/1752490721888-0.041016900088800545/package
+458 silly lockFile 8fcb61e0-888-0-041016900088800545-package tar:///home/earlgibe/tmp/npm-3098-WYxcRVLh/1752490721888-0.041016900088800545/package
+459 verbose lock tar:///home/earlgibe/tmp/npm-3098-WYxcRVLh/1752490721888-0.041016900088800545/package /home/earlgibe/.npm/8fcb61e0-888-0-041016900088800545-package.lock
+460 silly lockFile fbff51a7-e-npm-mongodb-6-17-0-package-tgz tar:///home/earlgibe/.npm/mongodb/6.17.0/package.tgz
+461 verbose lock tar:///home/earlgibe/.npm/mongodb/6.17.0/package.tgz /home/earlgibe/.npm/fbff51a7-e-npm-mongodb-6-17-0-package-tgz.lock
+462 silly lockFile 8fcb61e0-888-0-041016900088800545-package tar:///home/earlgibe/tmp/npm-3098-WYxcRVLh/1752490721888-0.041016900088800545/package
+463 silly lockFile 8fcb61e0-888-0-041016900088800545-package tar:///home/earlgibe/tmp/npm-3098-WYxcRVLh/1752490721888-0.041016900088800545/package
+464 silly lockFile fbff51a7-e-npm-mongodb-6-17-0-package-tgz tar:///home/earlgibe/.npm/mongodb/6.17.0/package.tgz
+465 silly lockFile fbff51a7-e-npm-mongodb-6-17-0-package-tgz tar:///home/earlgibe/.npm/mongodb/6.17.0/package.tgz
+466 silly lockFile 8ed53ff6-lgibe-npm-mongodb-6-17-0-package /home/earlgibe/.npm/mongodb/6.17.0/package
+467 verbose lock /home/earlgibe/.npm/mongodb/6.17.0/package /home/earlgibe/.npm/8ed53ff6-lgibe-npm-mongodb-6-17-0-package.lock
+468 silly lockFile 8ed53ff6-lgibe-npm-mongodb-6-17-0-package /home/earlgibe/.npm/mongodb/6.17.0/package
+469 silly lockFile 8ed53ff6-lgibe-npm-mongodb-6-17-0-package /home/earlgibe/.npm/mongodb/6.17.0/package
+470 verbose tar unpack /home/earlgibe/.npm/mongodb/6.17.0/package.tgz
+471 silly lockFile 3c266038-lgibe-npm-mongodb-6-17-0-package tar:///home/earlgibe/.npm/mongodb/6.17.0/package
+472 verbose lock tar:///home/earlgibe/.npm/mongodb/6.17.0/package /home/earlgibe/.npm/3c266038-lgibe-npm-mongodb-6-17-0-package.lock
+473 silly lockFile fbff51a7-e-npm-mongodb-6-17-0-package-tgz tar:///home/earlgibe/.npm/mongodb/6.17.0/package.tgz
+474 verbose lock tar:///home/earlgibe/.npm/mongodb/6.17.0/package.tgz /home/earlgibe/.npm/fbff51a7-e-npm-mongodb-6-17-0-package-tgz.lock
+475 silly gunzTarPerm modes [ '755', '644' ]
+476 silly gunzTarPerm extractEntry package.json
+477 silly gunzTarPerm extractEntry README.md
+478 silly gunzTarPerm extractEntry etc/prepare.js
+479 silly gunzTarPerm extractEntry lib/write_concern.js
+480 silly gunzTarPerm extractEntry lib/utils.js
+481 silly gunzTarPerm extractEntry lib/transactions.js
+482 silly gunzTarPerm extractEntry lib/timeout.js
+483 silly gunzTarPerm extractEntry lib/sort.js
+484 silly gunzTarPerm extractEntry lib/sessions.js
+485 silly gunzTarPerm extractEntry lib/resource_management.js
+486 silly gunzTarPerm extractEntry lib/read_preference.js
+487 silly gunzTarPerm extractEntry lib/read_concern.js
+488 silly gunzTarPerm extractEntry lib/mongo_types.js
+489 silly gunzTarPerm extractEntry lib/mongo_logger.js
+490 silly gunzTarPerm extractEntry lib/mongo_client_auth_providers.js
+491 silly gunzTarPerm extractEntry lib/mongo_client.js
+492 silly gunzTarPerm extractEntry lib/index.js
+493 silly gunzTarPerm extractEntry lib/explain.js
+494 silly gunzTarPerm extractEntry lib/error.js
+495 silly gunzTarPerm extractEntry lib/encrypter.js
+496 silly gunzTarPerm extractEntry lib/deps.js
+497 silly gunzTarPerm extractEntry lib/db.js
+498 silly gunzTarPerm extractEntry lib/constants.js
+499 silly gunzTarPerm extractEntry lib/connection_string.js
+500 silly gunzTarPerm extractEntry lib/collection.js
+501 silly gunzTarPerm extractEntry lib/change_stream.js
+502 silly gunzTarPerm extractEntry lib/bson.js
+503 silly gunzTarPerm extractEntry lib/beta.js
+504 silly gunzTarPerm extractEntry lib/admin.js
+505 silly gunzTarPerm extractEntry lib/admin.js.map
+506 silly gunzTarPerm extractEntry lib/beta.d.ts
+507 silly gunzTarPerm extractEntry lib/beta.js.map
+508 silly gunzTarPerm extractEntry lib/bson.js.map
+509 silly gunzTarPerm extractEntry lib/bulk/unordered.js
+510 silly gunzTarPerm extractEntry lib/bulk/ordered.js
+511 silly gunzTarPerm extractEntry lib/bulk/common.js
+512 silly gunzTarPerm extractEntry lib/bulk/common.js.map
+513 silly gunzTarPerm extractEntry lib/bulk/ordered.js.map
+514 silly gunzTarPerm extractEntry lib/bulk/unordered.js.map
+515 silly gunzTarPerm extractEntry lib/change_stream.js.map
+516 silly gunzTarPerm extractEntry lib/client-side-encryption/state_machine.js
+517 silly gunzTarPerm extractEntry lib/client-side-encryption/mongocryptd_manager.js
+518 silly gunzTarPerm extractEntry lib/client-side-encryption/errors.js
+519 silly gunzTarPerm extractEntry lib/client-side-encryption/crypto_callbacks.js
+520 silly gunzTarPerm extractEntry lib/client-side-encryption/client_encryption.js
+521 silly gunzTarPerm extractEntry lib/client-side-encryption/auto_encrypter.js
+522 silly gunzTarPerm extractEntry lib/client-side-encryption/auto_encrypter.js.map
+523 silly gunzTarPerm extractEntry lib/client-side-encryption/client_encryption.js.map
+524 silly gunzTarPerm extractEntry lib/client-side-encryption/crypto_callbacks.js.map
+525 silly gunzTarPerm extractEntry lib/client-side-encryption/errors.js.map
+526 silly gunzTarPerm extractEntry lib/client-side-encryption/mongocryptd_manager.js.map
+527 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/index.js
+528 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/gcp.js
+529 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/azure.js
+530 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/aws.js
+531 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/aws.js.map
+532 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/azure.js.map
+533 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/gcp.js.map
+534 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/index.js.map
+535 silly gunzTarPerm extractEntry lib/client-side-encryption/state_machine.js.map
+536 silly gunzTarPerm extractEntry lib/cmap/stream_description.js
+537 silly gunzTarPerm extractEntry lib/cmap/metrics.js
+538 silly gunzTarPerm extractEntry lib/cmap/errors.js
+539 silly gunzTarPerm extractEntry lib/cmap/connection_pool_events.js
+540 silly gunzTarPerm extractEntry lib/cmap/connection_pool.js
+541 silly gunzTarPerm extractEntry lib/cmap/connection.js
+542 silly gunzTarPerm extractEntry lib/cmap/connect.js
+543 silly gunzTarPerm extractEntry lib/cmap/commands.js
+544 silly gunzTarPerm extractEntry lib/cmap/command_monitoring_events.js
+545 silly gunzTarPerm extractEntry lib/cmap/auth/x509.js
+546 silly gunzTarPerm extractEntry lib/cmap/auth/scram.js
+547 silly gunzTarPerm extractEntry lib/cmap/auth/providers.js
+548 silly gunzTarPerm extractEntry lib/cmap/auth/plain.js
+549 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc.js
+550 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_aws.js
+551 silly gunzTarPerm extractEntry lib/cmap/auth/mongo_credentials.js
+552 silly gunzTarPerm extractEntry lib/cmap/auth/gssapi.js
+553 silly gunzTarPerm extractEntry lib/cmap/auth/aws_temporary_credentials.js
+554 silly gunzTarPerm extractEntry lib/cmap/auth/auth_provider.js
+555 silly gunzTarPerm extractEntry lib/cmap/auth/auth_provider.js.map
+556 silly gunzTarPerm extractEntry lib/cmap/auth/aws_temporary_credentials.js.map
+557 silly gunzTarPerm extractEntry lib/cmap/auth/gssapi.js.map
+558 silly gunzTarPerm extractEntry lib/cmap/auth/mongo_credentials.js.map
+559 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_aws.js.map
+560 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/token_machine_workflow.js
+561 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/token_cache.js
+562 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/k8s_machine_workflow.js
+563 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/human_callback_workflow.js
+564 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/gcp_machine_workflow.js
+565 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/command_builders.js
+566 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/callback_workflow.js
+567 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/azure_machine_workflow.js
+568 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/automated_callback_workflow.js
+569 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/automated_callback_workflow.js.map
+570 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/azure_machine_workflow.js.map
+571 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/callback_workflow.js.map
+572 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/command_builders.js.map
+573 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/gcp_machine_workflow.js.map
+574 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/human_callback_workflow.js.map
+575 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/k8s_machine_workflow.js.map
+576 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/token_cache.js.map
+577 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/token_machine_workflow.js.map
+578 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc.js.map
+579 silly gunzTarPerm extractEntry lib/cmap/auth/plain.js.map
+580 silly gunzTarPerm extractEntry lib/cmap/auth/providers.js.map
+581 silly gunzTarPerm extractEntry lib/cmap/auth/scram.js.map
+582 silly gunzTarPerm extractEntry lib/cmap/auth/x509.js.map
+583 silly gunzTarPerm extractEntry lib/cmap/command_monitoring_events.js.map
+584 silly gunzTarPerm extractEntry lib/cmap/commands.js.map
+585 silly gunzTarPerm extractEntry lib/cmap/connect.js.map
+586 silly gunzTarPerm extractEntry lib/cmap/connection.js.map
+587 silly gunzTarPerm extractEntry lib/cmap/connection_pool.js.map
+588 silly gunzTarPerm extractEntry lib/cmap/connection_pool_events.js.map
+589 silly gunzTarPerm extractEntry lib/cmap/errors.js.map
+590 silly gunzTarPerm extractEntry lib/cmap/handshake/client_metadata.js
+591 silly gunzTarPerm extractEntry lib/cmap/handshake/client_metadata.js.map
+592 silly gunzTarPerm extractEntry lib/cmap/metrics.js.map
+593 silly gunzTarPerm extractEntry lib/cmap/stream_description.js.map
+594 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/shared.js
+595 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/responses.js
+596 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/on_data.js
+597 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/constants.js
+598 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/compression.js
+599 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/compression.js.map
+600 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/constants.js.map
+601 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/on_data.js.map
+602 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/on_demand/document.js
+603 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/on_demand/document.js.map
+604 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/responses.js.map
+605 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/shared.js.map
+606 silly gunzTarPerm extractEntry lib/collection.js.map
+607 silly gunzTarPerm extractEntry lib/connection_string.js.map
+608 silly gunzTarPerm extractEntry lib/constants.js.map
+609 silly gunzTarPerm extractEntry lib/cursor/run_command_cursor.js
+610 silly gunzTarPerm extractEntry lib/cursor/list_search_indexes_cursor.js
+611 silly gunzTarPerm extractEntry lib/cursor/list_indexes_cursor.js
+612 silly gunzTarPerm extractEntry lib/cursor/list_collections_cursor.js
+613 silly gunzTarPerm extractEntry lib/cursor/find_cursor.js
+614 silly gunzTarPerm extractEntry lib/cursor/client_bulk_write_cursor.js
+615 silly gunzTarPerm extractEntry lib/cursor/change_stream_cursor.js
+616 silly gunzTarPerm extractEntry lib/cursor/aggregation_cursor.js
+617 silly gunzTarPerm extractEntry lib/cursor/abstract_cursor.js
+618 silly gunzTarPerm extractEntry lib/cursor/abstract_cursor.js.map
+619 silly gunzTarPerm extractEntry lib/cursor/aggregation_cursor.js.map
+620 silly gunzTarPerm extractEntry lib/cursor/change_stream_cursor.js.map
+621 silly gunzTarPerm extractEntry lib/cursor/client_bulk_write_cursor.js.map
+622 silly gunzTarPerm extractEntry lib/cursor/find_cursor.js.map
+623 silly gunzTarPerm extractEntry lib/cursor/list_collections_cursor.js.map
+624 silly gunzTarPerm extractEntry lib/cursor/list_indexes_cursor.js.map
+625 silly gunzTarPerm extractEntry lib/cursor/list_search_indexes_cursor.js.map
+626 silly gunzTarPerm extractEntry lib/cursor/run_command_cursor.js.map
+627 silly gunzTarPerm extractEntry lib/db.js.map
+628 silly gunzTarPerm extractEntry lib/deps.js.map
+629 silly gunzTarPerm extractEntry lib/encrypter.js.map
+630 silly gunzTarPerm extractEntry lib/error.js.map
+631 silly gunzTarPerm extractEntry lib/explain.js.map
+632 silly gunzTarPerm extractEntry lib/gridfs/upload.js
+633 silly gunzTarPerm extractEntry lib/gridfs/index.js
+634 silly gunzTarPerm extractEntry lib/gridfs/download.js
+635 silly gunzTarPerm extractEntry lib/gridfs/download.js.map
+636 silly gunzTarPerm extractEntry lib/gridfs/index.js.map
+637 silly gunzTarPerm extractEntry lib/gridfs/upload.js.map
+638 silly gunzTarPerm extractEntry lib/index.js.map
+639 silly gunzTarPerm extractEntry lib/mongo_client.js.map
+640 silly gunzTarPerm extractEntry lib/mongo_client_auth_providers.js.map
+641 silly gunzTarPerm extractEntry lib/mongo_logger.js.map
+642 silly gunzTarPerm extractEntry lib/mongo_types.js.map
+643 silly gunzTarPerm extractEntry lib/operations/validate_collection.js
+644 silly gunzTarPerm extractEntry lib/operations/update.js
+645 silly gunzTarPerm extractEntry lib/operations/stats.js
+646 silly gunzTarPerm extractEntry lib/operations/set_profiling_level.js
+647 silly gunzTarPerm extractEntry lib/operations/run_command.js
+648 silly gunzTarPerm extractEntry lib/operations/rename.js
+649 silly gunzTarPerm extractEntry lib/operations/remove_user.js
+650 silly gunzTarPerm extractEntry lib/operations/profiling_level.js
+651 silly gunzTarPerm extractEntry lib/operations/options_operation.js
+652 silly gunzTarPerm extractEntry lib/operations/operation.js
+653 silly gunzTarPerm extractEntry lib/operations/list_databases.js
+654 silly gunzTarPerm extractEntry lib/operations/list_collections.js
+655 silly gunzTarPerm extractEntry lib/operations/kill_cursors.js
+656 silly gunzTarPerm extractEntry lib/operations/is_capped.js
+657 silly gunzTarPerm extractEntry lib/operations/insert.js
+658 silly gunzTarPerm extractEntry lib/operations/indexes.js
+659 silly gunzTarPerm extractEntry lib/operations/get_more.js
+660 silly gunzTarPerm extractEntry lib/operations/find_and_modify.js
+661 silly gunzTarPerm extractEntry lib/operations/find.js
+662 silly gunzTarPerm extractEntry lib/operations/execute_operation.js
+663 silly gunzTarPerm extractEntry lib/operations/estimated_document_count.js
+664 silly gunzTarPerm extractEntry lib/operations/drop.js
+665 silly gunzTarPerm extractEntry lib/operations/distinct.js
+666 silly gunzTarPerm extractEntry lib/operations/delete.js
+667 silly gunzTarPerm extractEntry lib/operations/create_collection.js
+668 silly gunzTarPerm extractEntry lib/operations/count.js
+669 silly gunzTarPerm extractEntry lib/operations/command.js
+670 silly gunzTarPerm extractEntry lib/operations/collections.js
+671 silly gunzTarPerm extractEntry lib/operations/bulk_write.js
+672 silly gunzTarPerm extractEntry lib/operations/aggregate.js
+673 silly gunzTarPerm extractEntry lib/operations/aggregate.js.map
+674 silly gunzTarPerm extractEntry lib/operations/bulk_write.js.map
+675 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/results_merger.js
+676 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/executor.js
+677 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/common.js
+678 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/command_builder.js
+679 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/client_bulk_write.js
+680 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/client_bulk_write.js.map
+681 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/command_builder.js.map
+682 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/common.js.map
+683 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/executor.js.map
+684 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/results_merger.js.map
+685 silly gunzTarPerm extractEntry lib/operations/collections.js.map
+686 silly gunzTarPerm extractEntry lib/operations/command.js.map
+687 silly gunzTarPerm extractEntry lib/operations/count.js.map
+688 silly gunzTarPerm extractEntry lib/operations/create_collection.js.map
+689 silly gunzTarPerm extractEntry lib/operations/delete.js.map
+690 silly gunzTarPerm extractEntry lib/operations/distinct.js.map
+691 silly gunzTarPerm extractEntry lib/operations/drop.js.map
+692 silly gunzTarPerm extractEntry lib/operations/estimated_document_count.js.map
+693 silly gunzTarPerm extractEntry lib/operations/execute_operation.js.map
+694 silly gunzTarPerm extractEntry lib/operations/find.js.map
+695 silly gunzTarPerm extractEntry lib/operations/find_and_modify.js.map
+696 silly gunzTarPerm extractEntry lib/operations/get_more.js.map
+697 silly gunzTarPerm extractEntry lib/operations/indexes.js.map
+698 silly gunzTarPerm extractEntry lib/operations/insert.js.map
+699 silly gunzTarPerm extractEntry lib/operations/is_capped.js.map
+700 silly gunzTarPerm extractEntry lib/operations/kill_cursors.js.map
+701 silly gunzTarPerm extractEntry lib/operations/list_collections.js.map
+702 silly gunzTarPerm extractEntry lib/operations/list_databases.js.map
+703 silly gunzTarPerm extractEntry lib/operations/operation.js.map
+704 silly gunzTarPerm extractEntry lib/operations/options_operation.js.map
+705 silly gunzTarPerm extractEntry lib/operations/profiling_level.js.map
+706 silly gunzTarPerm extractEntry lib/operations/remove_user.js.map
+707 silly gunzTarPerm extractEntry lib/operations/rename.js.map
+708 silly gunzTarPerm extractEntry lib/operations/run_command.js.map
+709 silly gunzTarPerm extractEntry lib/operations/search_indexes/update.js
+710 silly gunzTarPerm extractEntry lib/operations/search_indexes/drop.js
+711 silly gunzTarPerm extractEntry lib/operations/search_indexes/create.js
+712 silly gunzTarPerm extractEntry lib/operations/search_indexes/create.js.map
+713 silly gunzTarPerm extractEntry lib/operations/search_indexes/drop.js.map
+714 silly gunzTarPerm extractEntry lib/operations/search_indexes/update.js.map
+715 silly gunzTarPerm extractEntry lib/operations/set_profiling_level.js.map
+716 silly gunzTarPerm extractEntry lib/operations/stats.js.map
+717 silly gunzTarPerm extractEntry lib/operations/update.js.map
+718 silly gunzTarPerm extractEntry lib/operations/validate_collection.js.map
+719 silly gunzTarPerm extractEntry lib/read_concern.js.map
+720 silly gunzTarPerm extractEntry lib/read_preference.js.map
+721 silly gunzTarPerm extractEntry lib/resource_management.js.map
+722 silly gunzTarPerm extractEntry lib/sdam/topology_description.js
+723 silly gunzTarPerm extractEntry lib/sdam/topology.js
+724 silly gunzTarPerm extractEntry lib/sdam/srv_polling.js
+725 silly gunzTarPerm extractEntry lib/sdam/server_selection_events.js
+726 silly gunzTarPerm extractEntry lib/sdam/server_selection.js
+727 silly gunzTarPerm extractEntry lib/sdam/server_description.js
+728 silly gunzTarPerm extractEntry lib/sdam/server.js
+729 silly gunzTarPerm extractEntry lib/sdam/monitor.js
+730 silly gunzTarPerm extractEntry lib/sdam/events.js
+731 silly gunzTarPerm extractEntry lib/sdam/common.js
+732 silly gunzTarPerm extractEntry lib/sdam/common.js.map
+733 silly gunzTarPerm extractEntry lib/sdam/events.js.map
+734 silly gunzTarPerm extractEntry lib/sdam/monitor.js.map
+735 silly gunzTarPerm extractEntry lib/sdam/server.js.map
+736 silly gunzTarPerm extractEntry lib/sdam/server_description.js.map
+737 silly gunzTarPerm extractEntry lib/sdam/server_selection.js.map
+738 silly gunzTarPerm extractEntry lib/sdam/server_selection_events.js.map
+739 silly gunzTarPerm extractEntry lib/sdam/srv_polling.js.map
+740 silly gunzTarPerm extractEntry lib/sdam/topology.js.map
+741 silly gunzTarPerm extractEntry lib/sdam/topology_description.js.map
+742 silly gunzTarPerm extractEntry lib/sessions.js.map
+743 silly gunzTarPerm extractEntry lib/sort.js.map
+744 silly gunzTarPerm extractEntry lib/timeout.js.map
+745 silly gunzTarPerm extractEntry lib/transactions.js.map
+746 silly gunzTarPerm extractEntry lib/utils.js.map
+747 silly gunzTarPerm extractEntry lib/write_concern.js.map
+748 silly gunzTarPerm extractEntry mongodb.d.ts
+749 silly gunzTarPerm extractEntry src/admin.ts
+750 silly gunzTarPerm extractEntry src/beta.ts
+751 silly gunzTarPerm extractEntry src/bson.ts
+752 silly gunzTarPerm extractEntry src/bulk/common.ts
+753 silly gunzTarPerm extractEntry src/bulk/ordered.ts
+754 silly gunzTarPerm extractEntry src/bulk/unordered.ts
+755 silly gunzTarPerm extractEntry src/change_stream.ts
+756 silly gunzTarPerm extractEntry src/client-side-encryption/auto_encrypter.ts
+757 silly gunzTarPerm extractEntry src/client-side-encryption/client_encryption.ts
+758 silly gunzTarPerm extractEntry src/client-side-encryption/crypto_callbacks.ts
+759 silly gunzTarPerm extractEntry src/client-side-encryption/errors.ts
+760 silly gunzTarPerm extractEntry src/client-side-encryption/mongocryptd_manager.ts
+761 silly gunzTarPerm extractEntry src/client-side-encryption/providers/aws.ts
+762 silly gunzTarPerm extractEntry src/client-side-encryption/providers/azure.ts
+763 silly gunzTarPerm extractEntry src/client-side-encryption/providers/gcp.ts
+764 silly gunzTarPerm extractEntry src/client-side-encryption/providers/index.ts
+765 silly gunzTarPerm extractEntry src/client-side-encryption/state_machine.ts
+766 silly gunzTarPerm extractEntry src/cmap/auth/auth_provider.ts
+767 silly gunzTarPerm extractEntry src/cmap/auth/aws_temporary_credentials.ts
+768 silly gunzTarPerm extractEntry src/cmap/auth/gssapi.ts
+769 silly gunzTarPerm extractEntry src/cmap/auth/mongo_credentials.ts
+770 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_aws.ts
+771 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/automated_callback_workflow.ts
+772 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/azure_machine_workflow.ts
+773 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/callback_workflow.ts
+774 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/command_builders.ts
+775 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/gcp_machine_workflow.ts
+776 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/human_callback_workflow.ts
+777 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/k8s_machine_workflow.ts
+778 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/token_cache.ts
+779 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/token_machine_workflow.ts
+780 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc.ts
+781 silly gunzTarPerm extractEntry src/cmap/auth/plain.ts
+782 silly gunzTarPerm extractEntry src/cmap/auth/providers.ts
+783 silly gunzTarPerm extractEntry src/cmap/auth/scram.ts
+784 silly gunzTarPerm extractEntry src/cmap/auth/x509.ts
+785 silly gunzTarPerm extractEntry src/cmap/command_monitoring_events.ts
+786 silly gunzTarPerm extractEntry src/cmap/commands.ts
+787 silly gunzTarPerm extractEntry src/cmap/connect.ts
+788 silly gunzTarPerm extractEntry src/cmap/connection.ts
+789 silly gunzTarPerm extractEntry src/cmap/connection_pool.ts
+790 silly gunzTarPerm extractEntry src/cmap/connection_pool_events.ts
+791 silly gunzTarPerm extractEntry src/cmap/errors.ts
+792 silly gunzTarPerm extractEntry src/cmap/handshake/client_metadata.ts
+793 silly gunzTarPerm extractEntry src/cmap/metrics.ts
+794 silly gunzTarPerm extractEntry src/cmap/stream_description.ts
+795 silly gunzTarPerm extractEntry src/cmap/wire_protocol/compression.ts
+796 silly gunzTarPerm extractEntry src/cmap/wire_protocol/constants.ts
+797 silly gunzTarPerm extractEntry src/cmap/wire_protocol/on_data.ts
+798 silly gunzTarPerm extractEntry src/cmap/wire_protocol/on_demand/document.ts
+799 silly gunzTarPerm extractEntry src/cmap/wire_protocol/responses.ts
+800 silly gunzTarPerm extractEntry src/cmap/wire_protocol/shared.ts
+801 silly gunzTarPerm extractEntry src/collection.ts
+802 silly gunzTarPerm extractEntry src/connection_string.ts
+803 silly gunzTarPerm extractEntry src/constants.ts
+804 silly gunzTarPerm extractEntry src/cursor/abstract_cursor.ts
+805 silly gunzTarPerm extractEntry src/cursor/aggregation_cursor.ts
+806 silly gunzTarPerm extractEntry src/cursor/change_stream_cursor.ts
+807 silly gunzTarPerm extractEntry src/cursor/client_bulk_write_cursor.ts
+808 silly gunzTarPerm extractEntry src/cursor/find_cursor.ts
+809 silly gunzTarPerm extractEntry src/cursor/list_collections_cursor.ts
+810 silly gunzTarPerm extractEntry src/cursor/list_indexes_cursor.ts
+811 silly gunzTarPerm extractEntry src/cursor/list_search_indexes_cursor.ts
+812 silly gunzTarPerm extractEntry src/cursor/run_command_cursor.ts
+813 silly gunzTarPerm extractEntry src/db.ts
+814 silly gunzTarPerm extractEntry src/deps.ts
+815 silly gunzTarPerm extractEntry src/encrypter.ts
+816 silly gunzTarPerm extractEntry src/error.ts
+817 silly gunzTarPerm extractEntry src/explain.ts
+818 silly gunzTarPerm extractEntry src/gridfs/download.ts
+819 silly gunzTarPerm extractEntry src/gridfs/index.ts
+820 silly gunzTarPerm extractEntry src/gridfs/upload.ts
+821 silly gunzTarPerm extractEntry src/index.ts
+822 silly gunzTarPerm extractEntry src/mongo_client.ts
+823 silly gunzTarPerm extractEntry src/mongo_client_auth_providers.ts
+824 silly gunzTarPerm extractEntry src/mongo_logger.ts
+825 silly gunzTarPerm extractEntry src/mongo_types.ts
+826 silly gunzTarPerm extractEntry src/operations/aggregate.ts
+827 silly gunzTarPerm extractEntry src/operations/bulk_write.ts
+828 silly gunzTarPerm extractEntry src/operations/client_bulk_write/client_bulk_write.ts
+829 silly gunzTarPerm extractEntry src/operations/client_bulk_write/command_builder.ts
+830 silly gunzTarPerm extractEntry src/operations/client_bulk_write/common.ts
+831 silly gunzTarPerm extractEntry src/operations/client_bulk_write/executor.ts
+832 silly gunzTarPerm extractEntry src/operations/client_bulk_write/results_merger.ts
+833 silly gunzTarPerm extractEntry src/operations/collections.ts
+834 silly gunzTarPerm extractEntry src/operations/command.ts
+835 silly gunzTarPerm extractEntry src/operations/count.ts
+836 silly gunzTarPerm extractEntry src/operations/create_collection.ts
+837 silly gunzTarPerm extractEntry src/operations/delete.ts
+838 silly gunzTarPerm extractEntry src/operations/distinct.ts
+839 silly gunzTarPerm extractEntry src/operations/drop.ts
+840 silly gunzTarPerm extractEntry src/operations/estimated_document_count.ts
+841 silly gunzTarPerm extractEntry src/operations/execute_operation.ts
+842 silly gunzTarPerm extractEntry src/operations/find.ts
+843 silly gunzTarPerm extractEntry src/operations/find_and_modify.ts
+844 silly gunzTarPerm extractEntry src/operations/get_more.ts
+845 silly gunzTarPerm extractEntry src/operations/indexes.ts
+846 silly gunzTarPerm extractEntry src/operations/insert.ts
+847 silly gunzTarPerm extractEntry src/operations/is_capped.ts
+848 silly gunzTarPerm extractEntry src/operations/kill_cursors.ts
+849 silly gunzTarPerm extractEntry src/operations/list_collections.ts
+850 silly gunzTarPerm extractEntry src/operations/list_databases.ts
+851 silly gunzTarPerm extractEntry src/operations/operation.ts
+852 silly gunzTarPerm extractEntry src/operations/options_operation.ts
+853 silly gunzTarPerm extractEntry src/operations/profiling_level.ts
+854 silly gunzTarPerm extractEntry src/operations/remove_user.ts
+855 silly gunzTarPerm extractEntry src/operations/rename.ts
+856 silly gunzTarPerm extractEntry src/operations/run_command.ts
+857 silly gunzTarPerm extractEntry src/operations/search_indexes/create.ts
+858 silly gunzTarPerm extractEntry src/operations/search_indexes/drop.ts
+859 silly gunzTarPerm extractEntry src/operations/search_indexes/update.ts
+860 silly gunzTarPerm extractEntry src/operations/set_profiling_level.ts
+861 silly gunzTarPerm extractEntry src/operations/stats.ts
+862 silly gunzTarPerm extractEntry src/operations/update.ts
+863 silly gunzTarPerm extractEntry src/operations/validate_collection.ts
+864 silly gunzTarPerm extractEntry src/read_concern.ts
+865 silly gunzTarPerm extractEntry src/read_preference.ts
+866 silly gunzTarPerm extractEntry src/resource_management.ts
+867 silly gunzTarPerm extractEntry src/sdam/common.ts
+868 silly gunzTarPerm extractEntry src/sdam/events.ts
+869 silly gunzTarPerm extractEntry src/sdam/monitor.ts
+870 silly gunzTarPerm extractEntry src/sdam/server.ts
+871 silly gunzTarPerm extractEntry src/sdam/server_description.ts
+872 silly gunzTarPerm extractEntry src/sdam/server_selection.ts
+873 silly gunzTarPerm extractEntry src/sdam/server_selection_events.ts
+874 silly gunzTarPerm extractEntry src/sdam/srv_polling.ts
+875 silly gunzTarPerm extractEntry src/sdam/topology.ts
+876 silly gunzTarPerm extractEntry src/sdam/topology_description.ts
+877 silly gunzTarPerm extractEntry src/sessions.ts
+878 silly gunzTarPerm extractEntry src/sort.ts
+879 silly gunzTarPerm extractEntry src/timeout.ts
+880 silly gunzTarPerm extractEntry src/transactions.ts
+881 silly gunzTarPerm extractEntry src/utils.ts
+882 silly gunzTarPerm extractEntry src/write_concern.ts
+883 silly gunzTarPerm extractEntry tsconfig.json
+884 silly lockFile 3c266038-lgibe-npm-mongodb-6-17-0-package tar:///home/earlgibe/.npm/mongodb/6.17.0/package
+885 silly lockFile 3c266038-lgibe-npm-mongodb-6-17-0-package tar:///home/earlgibe/.npm/mongodb/6.17.0/package
+886 silly lockFile fbff51a7-e-npm-mongodb-6-17-0-package-tgz tar:///home/earlgibe/.npm/mongodb/6.17.0/package.tgz
+887 silly lockFile fbff51a7-e-npm-mongodb-6-17-0-package-tgz tar:///home/earlgibe/.npm/mongodb/6.17.0/package.tgz
+888 verbose chmod /home/earlgibe/.npm/mongodb/6.17.0/package.tgz 644
+889 verbose chown /home/earlgibe/.npm/mongodb/6.17.0/package.tgz [ 1000, 1000 ]
+890 silly lockFile bae96cfc-s-org-mongodb-mongodb-6-17-0-tgz https://registry.npmjs.org/mongodb/-/mongodb-6.17.0.tgz
+891 silly lockFile bae96cfc-s-org-mongodb-mongodb-6-17-0-tgz https://registry.npmjs.org/mongodb/-/mongodb-6.17.0.tgz
+892 silly lockFile 302449b7-mongodb-6-17-0 mongodb@6.17.0
+893 silly lockFile 302449b7-mongodb-6-17-0 mongodb@6.17.0
+894 silly lockFile 886df635-mongodb mongodb@
+895 silly lockFile 886df635-mongodb mongodb@
+896 silly resolved [
+896 silly resolved   {
+896 silly resolved     name: 'mongodb',
+896 silly resolved     version: '6.17.0',
+896 silly resolved     description: 'The official MongoDB driver for Node.js',
+896 silly resolved     main: 'lib/index.js',
+896 silly resolved     files: [ 'lib', 'src', 'etc/prepare.js', 'mongodb.d.ts', 'tsconfig.json' ],
+896 silly resolved     types: 'mongodb.d.ts',
+896 silly resolved     repository: {
+896 silly resolved       type: 'git',
+896 silly resolved       url: 'git@github.com:mongodb/node-mongodb-native.git'
+896 silly resolved     },
+896 silly resolved     keywords: [ 'mongodb', 'driver', 'official' ],
+896 silly resolved     author: { name: 'The MongoDB NodeJS Team', email: 'dbx-node@mongodb.com' },
+896 silly resolved     dependencies: {
+896 silly resolved       '@mongodb-js/saslprep': '^1.1.9',
+896 silly resolved       bson: '^6.10.4',
+896 silly resolved       'mongodb-connection-string-url': '^3.0.0'
+896 silly resolved     },
+896 silly resolved     peerDependencies: {
+896 silly resolved       '@aws-sdk/credential-providers': '^3.188.0',
+896 silly resolved       '@mongodb-js/zstd': '^1.1.0 || ^2.0.0',
+896 silly resolved       'gcp-metadata': '^5.2.0',
+896 silly resolved       kerberos: '^2.0.1',
+896 silly resolved       'mongodb-client-encryption': '>=6.0.0 <7',
+896 silly resolved       snappy: '^7.2.2',
+896 silly resolved       socks: '^2.7.1'
+896 silly resolved     },
+896 silly resolved     peerDependenciesMeta: {
+896 silly resolved       '@aws-sdk/credential-providers': [Object],
+896 silly resolved       '@mongodb-js/zstd': [Object],
+896 silly resolved       kerberos: [Object],
+896 silly resolved       snappy: [Object],
+896 silly resolved       'mongodb-client-encryption': [Object],
+896 silly resolved       'gcp-metadata': [Object],
+896 silly resolved       socks: [Object]
+896 silly resolved     },
+896 silly resolved     devDependencies: {
+896 silly resolved       '@aws-sdk/credential-providers': '^3.632.0',
+896 silly resolved       '@iarna/toml': '^2.2.5',
+896 silly resolved       '@istanbuljs/nyc-config-typescript': '^1.0.2',
+896 silly resolved       '@microsoft/api-extractor': '^7.52.5',
+896 silly resolved       '@microsoft/tsdoc-config': '^0.17.1',
+896 silly resolved       '@mongodb-js/zstd': '^2.0.1',
+896 silly resolved       '@types/chai': '^4.3.17',
+896 silly resolved       '@types/chai-subset': '^1.3.5',
+896 silly resolved       '@types/express': '^5.0.1',
+896 silly resolved       '@types/kerberos': '^1.1.5',
+896 silly resolved       '@types/mocha': '^10.0.9',
+896 silly resolved       '@types/node': '^22.15.3',
+896 silly resolved       '@types/saslprep': '^1.0.3',
+896 silly resolved       '@types/semver': '^7.7.0',
+896 silly resolved       '@types/sinon': '^17.0.4',
+896 silly resolved       '@types/sinon-chai': '^4.0.0',
+896 silly resolved       '@types/whatwg-url': '^13.0.0',
+896 silly resolved       '@typescript-eslint/eslint-plugin': '^8.31.1',
+896 silly resolved       '@typescript-eslint/parser': '^8.31.1',
+896 silly resolved       chai: '^4.4.1',
+896 silly resolved       'chai-subset': '^1.6.0',
+896 silly resolved       chalk: '^4.1.2',
+896 silly resolved       eslint: '^9.25.1',
+896 silly resolved       'eslint-config-prettier': '^10.1.2',
+896 silly resolved       'eslint-plugin-mocha': '^10.4.1',
+896 silly resolved       'eslint-plugin-prettier': '^5.2.3',
+896 silly resolved       'eslint-plugin-simple-import-sort': '^12.1.1',
+896 silly resolved       'eslint-plugin-tsdoc': '^0.4.0',
+896 silly resolved       'eslint-plugin-unused-imports': '^4.1.4',
+896 silly resolved       express: '^5.1.0',
+896 silly resolved       'gcp-metadata': '^5.3.0',
+896 silly resolved       'js-yaml': '^4.1.0',
+896 silly resolved       mocha: '^10.8.2',
+896 silly resolved       'mocha-sinon': '^2.1.2',
+896 silly resolved       'mongodb-client-encryption': '^6.4.0',
+896 silly resolved       'mongodb-legacy': '^6.1.3',
+896 silly resolved       nyc: '^15.1.0',
+896 silly resolved       prettier: '^3.5.3',
+896 silly resolved       semver: '^7.7.0',
+896 silly resolved       sinon: '^18.0.1',
+896 silly resolved       'sinon-chai': '^3.7.0',
+896 silly resolved       snappy: '^7.2.2',
+896 silly resolved       socks: '^2.8.1',
+896 silly resolved       'source-map-support': '^0.5.21',
+896 silly resolved       'ts-node': '^10.9.2',
+896 silly resolved       tsd: '^0.31.2',
+896 silly resolved       typescript: '5.5',
+896 silly resolved       'typescript-cached-transpile': '^0.0.6',
+896 silly resolved       'v8-heapsnapshot': '^1.3.1',
+896 silly resolved       yargs: '^17.7.2'
+896 silly resolved     },
+896 silly resolved     license: 'Apache-2.0',
+896 silly resolved     engines: { node: '>=16.20.1' },
+896 silly resolved     bugs: { url: 'https://jira.mongodb.org/projects/NODE/issues/' },
+896 silly resolved     homepage: 'https://github.com/mongodb/node-mongodb-native',
+896 silly resolved     scripts: {
+896 silly resolved       'build:evergreen': 'node .evergreen/generate_evergreen_tasks.js',
+896 silly resolved       'build:ts': 'node ./node_modules/typescript/bin/tsc',
+896 silly resolved       'build:dts': 'npm run build:ts && api-extractor run && node etc/clean_definition_files.cjs && ESLINT_USE_FLAT_CONFIG=false eslint --no-ignore --fix mongodb.d.ts lib/beta.d.ts',
+896 silly resolved       'build:docs': './etc/docs/build.ts',
+896 silly resolved       'build:typedoc': 'typedoc',
+896 silly resolved       'build:nightly': 'node ./.github/scripts/nightly.mjs',
+896 silly resolved       'check:bench': 'npm --prefix test/benchmarks/driver_bench start',
+896 silly resolved       'check:coverage': 'nyc npm run test:all',
+896 silly resolved       'check:integration-coverage': 'nyc npm run check:test',
+896 silly resolved       'check:lambda': 'nyc mocha --config test/mocha_lambda.js test/integration/node-specific/examples/handler.test.js',
+896 silly resolved       'check:lambda:aws': 'nyc mocha --config test/mocha_lambda.js test/integration/node-specific/examples/aws_handler.test.js',
+896 silly resolved       'check:lint': 'npm run build:dts && npm run check:dts && npm run check:eslint && npm run check:tsd',
+896 silly resolved       'check:eslint': "npm run build:dts && ESLINT_USE_FLAT_CONFIG=false eslint -v && ESLINT_USE_FLAT_CONFIG=false eslint --max-warnings=0 --ext '.js,.ts' src test",
+896 silly resolved       'check:tsd': 'tsd --version && tsd',
+896 silly resolved       'check:dependencies': 'mocha test/action/dependency.test.ts',
+896 silly resolved       'check:dts': 'node ./node_modules/typescript/bin/tsc --noEmit mongodb.d.ts && tsd',
+896 silly resolved       'check:search-indexes': 'nyc mocha --config test/mocha_mongodb.js test/manual/search-index-management.prose.test.ts',
+896 silly resolved       'check:test': 'mocha --config test/mocha_mongodb.js test/integration',
+896 silly resolved       'check:unit': 'nyc mocha test/unit',
+896 silly resolved       'check:ts': 'node ./node_modules/typescript/bin/tsc -v && node ./node_modules/typescript/bin/tsc --noEmit',
+896 silly resolved       'check:atlas': 'nyc mocha --config test/manual/mocharc.js test/manual/atlas_connectivity.test.ts',
+896 silly resolved       'check:resource-management': 'nyc mocha --config test/manual/mocharc.js test/manual/resource_management.test.ts',
+896 silly resolved       'check:drivers-atlas-testing': 'nyc mocha --config test/mocha_mongodb.js test/atlas/drivers_atlas_testing.test.ts',
+896 silly resolved       'check:adl': 'nyc mocha --config test/mocha_mongodb.js test/manual/atlas-data-lake-testing',
+896 silly resolved       'check:aws': 'nyc mocha --config test/mocha_mongodb.js test/integration/auth/mongodb_aws.test.ts',
+896 silly resolved       'check:oidc-auth': 'nyc mocha --config test/mocha_mongodb.js test/integration/auth/auth.spec.test.ts',
+896 silly resolved       'check:oidc-test': 'nyc mocha --config test/mocha_mongodb.js test/integration/auth/mongodb_oidc.prose.test.ts',
+896 silly resolved       'check:oidc-azure': 'nyc mocha --config test/mocha_mongodb.js test/integration/auth/mongodb_oidc_azure.prose.05.test.ts',
+896 silly resolved       'check:oidc-gcp': 'nyc mocha --config test/mocha_mongodb.js test/integration/auth/mongodb_oidc_gcp.prose.06.test.ts',
+896 silly resolved       'check:oidc-k8s': 'nyc mocha --config test/mocha_mongodb.js test/integration/auth/mongodb_oidc_k8s.prose.07.test.ts',
+896 silly resolved       'check:kerberos': 'nyc mocha --config test/manual/mocharc.js test/manual/kerberos.test.ts',
+896 silly resolved       'check:tls': 'nyc mocha --config test/manual/mocharc.js test/manual/tls_support.test.ts',
+896 silly resolved       'check:ldap': 'nyc mocha --config test/manual/mocharc.js test/manual/ldap.test.ts',
+896 silly resolved       'check:socks5': 'nyc mocha --config test/manual/mocharc.js test/manual/socks5.test.ts',
+896 silly resolved       'check:csfle': 'nyc mocha --config test/mocha_mongodb.js test/integration/client-side-encryption',
+896 silly resolved       'check:snappy': 'nyc mocha test/unit/assorted/snappy.test.js',
+896 silly resolved       'check:x509': 'nyc mocha test/manual/x509_auth.test.ts',
+896 silly resolved       'fix:eslint': 'npm run check:eslint -- --fix',
+896 silly resolved       prepare: 'node etc/prepare.js',
+896 silly resolved       'preview:docs': 'ts-node etc/docs/preview.ts',
+896 silly resolved       test: 'npm run check:lint && npm run test:all',
+896 silly resolved       'test:all': 'npm run check:unit && npm run check:test',
+896 silly resolved       'update:docs': 'npm run build:docs -- --yes'
+896 silly resolved     },
+896 silly resolved     tsd: { directory: 'test/types', compilerOptions: [Object] },
+896 silly resolved     readme: '# MongoDB Node.js Driver\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'The official [MongoDB](https://www.mongodb.com/) driver for Node.js.\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '**Upgrading to version 6? Take a look at our [upgrade guide here](https://github.com/mongodb/node-mongodb-native/blob/HEAD/etc/notes/CHANGES_6.0.0.md)!**\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '## Quick Links\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '| Site                     | Link                                                                                                                                  |\n' +
+896 silly resolved       '| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |\n' +
+896 silly resolved       '| Documentation            | [www.mongodb.com/docs/drivers/node](https://www.mongodb.com/docs/drivers/node)                                                        |\n' +
+896 silly resolved       '| API Docs                 | [mongodb.github.io/node-mongodb-native](https://mongodb.github.io/node-mongodb-native)                                                |\n' +
+896 silly resolved       '| `npm` package            | [www.npmjs.com/package/mongodb](https://www.npmjs.com/package/mongodb)                                                                |\n' +
+896 silly resolved       '| MongoDB                  | [www.mongodb.com](https://www.mongodb.com)                                                                                            |\n' +
+896 silly resolved       '| MongoDB University       | [learn.mongodb.com](https://learn.mongodb.com/catalog?labels=%5B%22Language%22%5D&values=%5B%22Node.js%22%5D)                         |\n' +
+896 silly resolved       '| MongoDB Developer Center | [www.mongodb.com/developer](https://www.mongodb.com/developer/languages/javascript/)                                                  |\n' +
+896 silly resolved       '| Stack Overflow           | [stackoverflow.com](https://stackoverflow.com/search?q=%28%5Btypescript%5D+or+%5Bjavascript%5D+or+%5Bnode.js%5D%29+and+%5Bmongodb%5D) |\n' +
+896 silly resolved       '| Source Code              | [github.com/mongodb/node-mongodb-native](https://github.com/mongodb/node-mongodb-native)                                              |\n' +
+896 silly resolved       '| Upgrade to v6            | [etc/notes/CHANGES_6.0.0.md](https://github.com/mongodb/node-mongodb-native/blob/HEAD/etc/notes/CHANGES_6.0.0.md)                     |\n' +
+896 silly resolved       '| Contributing             | [CONTRIBUTING.md](https://github.com/mongodb/node-mongodb-native/blob/HEAD/CONTRIBUTING.md)                                           |\n' +
+896 silly resolved       '| Changelog                | [HISTORY.md](https://github.com/mongodb/node-mongodb-native/blob/HEAD/HISTORY.md)                                                     |\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '### Release Integrity\n' +
+896 silly resolved       '\n' +
+896 silly resolved       "Releases are created automatically and signed using the [Node team's GPG key](https://pgp.mongodb.com/node-driver.asc). This applies to the git tag as well as all release packages provided as part of a GitHub release. To verify the provided packages, download the key and import it using gpg:\n" +
+896 silly resolved       '\n' +
+896 silly resolved       '```shell\n' +
+896 silly resolved       'gpg --import node-driver.asc\n' +
+896 silly resolved       '```\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'The GitHub release contains a detached signature file for the NPM package (named\n' +
+896 silly resolved       '`mongodb-X.Y.Z.tgz.sig`).\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'The following command returns the link npm package.\n' +
+896 silly resolved       '```shell\n' +
+896 silly resolved       'npm view mongodb@vX.Y.Z dist.tarball\n' +
+896 silly resolved       '```\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'Using the result of the above command, a `curl` command can return the official npm package for the release.\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'To verify the integrity of the downloaded package, run the following command:\n' +
+896 silly resolved       '```shell\n' +
+896 silly resolved       'gpg --verify mongodb-X.Y.Z.tgz.sig mongodb-X.Y.Z.tgz\n' +
+896 silly resolved       '```\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '>[!Note]\n' +
+896 silly resolved       "No verification is done when using npm to install the package. The contents of the Github tarball and npm's tarball are identical.\n" +
+896 silly resolved       '\n' +
+896 silly resolved       'The MongoDB Node.js driver follows [semantic versioning](https://semver.org/) for its releases.\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '### Bugs / Feature Requests\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'Think you’ve found a bug? Want to see a new feature in `node-mongodb-native`? Please open a\n' +
+896 silly resolved       'case in our issue management tool, JIRA:\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '- Create an account and login [jira.mongodb.org](https://jira.mongodb.org).\n' +
+896 silly resolved       '- Navigate to the NODE project [jira.mongodb.org/browse/NODE](https://jira.mongodb.org/browse/NODE).\n' +
+896 silly resolved       '- Click **Create Issue** - Please provide as much information as possible about the issue type and how to reproduce it.\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'Bug reports in JIRA for all driver projects (i.e. NODE, PYTHON, CSHARP, JAVA) and the\n' +
+896 silly resolved       'Core Server (i.e. SERVER) project are **public**.\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '### Support / Feedback\n' +
+896 silly resolved       '\n' +
+896 silly resolved       "For issues with, questions about, or feedback for the Node.js driver, please look into our [support channels](https://www.mongodb.com/docs/manual/support). Please do not email any of the driver developers directly with issues or questions - you're more likely to get an answer on the [MongoDB Community Forums](https://community.mongodb.com/tags/c/drivers-odms-connectors/7/node-js-driver).\n" +
+896 silly resolved       '\n' +
+896 silly resolved       '### Change Log\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'Change history can be found in [`HISTORY.md`](https://github.com/mongodb/node-mongodb-native/blob/HEAD/HISTORY.md).\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '### Compatibility\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'The driver currently supports 4.0+ servers.\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '** 4.0 support is deprecated and support will be removed in an upcoming driver release. **\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'For exhaustive server and runtime version compatibility matrices, please refer to the following links:\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '- [MongoDB](https://www.mongodb.com/docs/drivers/node/current/compatibility/#mongodb-compatibility)\n' +
+896 silly resolved       '- [NodeJS](https://www.mongodb.com/docs/drivers/node/current/compatibility/#language-compatibility)\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '#### Component Support Matrix\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'The following table describes add-on component version compatibility for the Node.js driver. Only packages with versions in these supported ranges are stable when used in combination.\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '| Component                                                                            | `mongodb@3.x`      | `mongodb@4.x`      | `mongodb@5.x`      | `mongodb@<6.12` | `mongodb@>=6.12`   |\n' +
+896 silly resolved       '| ------------------------------------------------------------------------------------ | ------------------ | ------------------ | ------------------ | --------------- | ------------------ |\n' +
+896 silly resolved       '| [bson](https://www.npmjs.com/package/bson)                                           | ^1.0.0             | ^4.0.0             | ^5.0.0             | ^6.0.0          | ^6.0.0             |\n' +
+896 silly resolved       '| [bson-ext](https://www.npmjs.com/package/bson-ext)                                   | ^1.0.0 \\|\\| ^2.0.0 | ^4.0.0             | N/A                | N/A             | N/A                |\n' +
+896 silly resolved       '| [kerberos](https://www.npmjs.com/package/kerberos)                                   | ^1.0.0             | ^1.0.0 \\|\\| ^2.0.0 | ^1.0.0 \\|\\| ^2.0.0 | ^2.0.1          | ^2.0.1             |\n' +
+896 silly resolved       '| [mongodb-client-encryption](https://www.npmjs.com/package/mongodb-client-encryption) | ^1.0.0             | ^1.0.0 \\|\\| ^2.0.0 | ^2.3.0             | ^6.0.0          | ^6.0.0             |\n' +
+896 silly resolved       '| [mongodb-legacy](https://www.npmjs.com/package/mongodb-legacy)                       | N/A                | ^4.0.0             | ^5.0.0             | ^6.0.0          | ^6.0.0             |\n' +
+896 silly resolved       '| [@mongodb-js/zstd](https://www.npmjs.com/package/@mongodb-js/zstd)                   | N/A                | ^1.0.0             | ^1.0.0             | ^1.1.0          | ^1.1.0 \\|\\| ^2.0.0 |\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '#### Typescript Version\n' +
+896 silly resolved       '\n' +
+896 silly resolved       "We recommend using the latest version of typescript, however we currently ensure the driver's public types compile against `typescript@4.4.0`.\n" +
+896 silly resolved       'This is the lowest typescript version guaranteed to work with our driver: older versions may or may not work - use at your own risk.\n' +
+896 silly resolved       'Since typescript [does not restrict breaking changes to major versions](https://github.com/Microsoft/TypeScript/wiki/Breaking-Changes), we consider this support best effort.\n' +
+896 silly resolved       'If you run into any unexpected compiler failures against our supported TypeScript versions, please let us know by filing an issue on our [JIRA](https://jira.mongodb.org/browse/NODE).\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'Additionally, our Typescript types are compatible with the ECMAScript standard for our minimum supported Node version.  Currently, our Typescript targets es2021.\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '## Installation\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'The recommended way to get started using the Node.js 5.x driver is by using the `npm` (Node Package Manager) to install the dependency in your project.\n' +
+896 silly resolved       '\n' +
+896 silly resolved       "After you've created your own project using `npm init`, you can run:\n" +
+896 silly resolved       '\n' +
+896 silly resolved       '```bash\n' +
+896 silly resolved       'npm install mongodb\n' +
+896 silly resolved       '```\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'This will download the MongoDB driver and add a dependency entry in your `package.json` file.\n' +
+896 silly resolved       '\n' +
+896 silly resolved       "If you are a Typescript user, you will need the Node.js type definitions to use the driver's definitions:\n" +
+896 silly resolved       '\n' +
+896 silly resolved       '```sh\n' +
+896 silly resolved       'npm install -D @types/node\n' +
+896 silly resolved       '```\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '## Driver Extensions\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'The MongoDB driver can optionally be enhanced by the following feature packages:\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'Maintained by MongoDB:\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '- Zstd network compression - [@mongodb-js/zstd](https://github.com/mongodb-js/zstd)\n' +
+896 silly resolved       '- MongoDB field level and queryable encryption - [mongodb-client-encryption](https://github.com/mongodb/libmongocrypt#readme)\n' +
+896 silly resolved       '- GSSAPI / SSPI / Kerberos authentication - [kerberos](https://github.com/mongodb-js/kerberos)\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'Some of these packages include native C++ extensions.\n' +
+896 silly resolved       'Consult the [trouble shooting guide here](https://github.com/mongodb/node-mongodb-native/blob/HEAD/etc/notes/native-extensions.md) if you run into compilation issues.\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'Third party:\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '- Snappy network compression - [snappy](https://github.com/Brooooooklyn/snappy)\n' +
+896 silly resolved       '- AWS authentication - [@aws-sdk/credential-providers](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/credential-providers)\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '## Quick Start\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'This guide will show you how to set up a simple application using Node.js and MongoDB. Its scope is only how to set up the driver and perform the simple CRUD operations. For more in-depth coverage, see the [official documentation](https://www.mongodb.com/docs/drivers/node/).\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '### Create the `package.json` file\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'First, create a directory where your application will live.\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '```bash\n' +
+896 silly resolved       'mkdir myProject\n' +
+896 silly resolved       'cd myProject\n' +
+896 silly resolved       '```\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'Enter the following command and answer the questions to create the initial structure for your new project:\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '```bash\n' +
+896 silly resolved       'npm init -y\n' +
+896 silly resolved       '```\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'Next, install the driver as a dependency.\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '```bash\n' +
+896 silly resolved       'npm install mongodb\n' +
+896 silly resolved       '```\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '### Start a MongoDB Server\n' +
+896 silly resolved       '\n' +
+896 silly resolved       'For complete MongoDB installation instructions, see [the manual](https://www.mongodb.com/docs/manual/installation/).\n' +
+896 silly resolved       '\n' +
+896 silly resolved       '1. Download the right MongoDB version from [MongoDB](https://www.mongodb.org/downloads)\n' +
+896 silly resolved       '2. Create a database directory (in this case under **/data**).\n' +
+896 silly resolved       '3. Install'... 6461 more characters,
+896 silly resolved     readmeFilename: 'README.md',
+896 silly resolved     _id: 'mongodb@6.17.0',
+896 silly resolved     dist: { shasum: 'a7f646f8a06fc900285a54d6b1ac9fb6f962ec66' },
+896 silly resolved     _from: 'mongodb@',
+896 silly resolved     _resolved: 'https://registry.npmjs.org/mongodb/-/mongodb-6.17.0.tgz'
+896 silly resolved   }
+896 silly resolved ]
+897 info install mongodb@6.17.0 into /home/earlgibe/appunto
+898 info installOne mongodb@6.17.0
+899 info /home/earlgibe/appunto/node_modules/mongodb unbuild
+900 verbose tar unpack /home/earlgibe/.npm/mongodb/6.17.0/package.tgz
+901 silly lockFile d9bf80da-ibe-appunto-node-modules-mongodb tar:///home/earlgibe/appunto/node_modules/mongodb
+902 verbose lock tar:///home/earlgibe/appunto/node_modules/mongodb /home/earlgibe/.npm/d9bf80da-ibe-appunto-node-modules-mongodb.lock
+903 silly lockFile fbff51a7-e-npm-mongodb-6-17-0-package-tgz tar:///home/earlgibe/.npm/mongodb/6.17.0/package.tgz
+904 verbose lock tar:///home/earlgibe/.npm/mongodb/6.17.0/package.tgz /home/earlgibe/.npm/fbff51a7-e-npm-mongodb-6-17-0-package-tgz.lock
+905 silly gunzTarPerm modes [ '755', '644' ]
+906 silly gunzTarPerm extractEntry package.json
+907 silly gunzTarPerm extractEntry README.md
+908 silly gunzTarPerm extractEntry etc/prepare.js
+909 silly gunzTarPerm extractEntry lib/write_concern.js
+910 silly gunzTarPerm extractEntry lib/utils.js
+911 silly gunzTarPerm extractEntry lib/transactions.js
+912 silly gunzTarPerm extractEntry lib/timeout.js
+913 silly gunzTarPerm extractEntry lib/sort.js
+914 silly gunzTarPerm extractEntry lib/sessions.js
+915 silly gunzTarPerm extractEntry lib/resource_management.js
+916 silly gunzTarPerm extractEntry lib/read_preference.js
+917 silly gunzTarPerm extractEntry lib/read_concern.js
+918 silly gunzTarPerm extractEntry lib/mongo_types.js
+919 silly gunzTarPerm extractEntry lib/mongo_logger.js
+920 silly gunzTarPerm extractEntry lib/mongo_client_auth_providers.js
+921 silly gunzTarPerm extractEntry lib/mongo_client.js
+922 silly gunzTarPerm extractEntry lib/index.js
+923 silly gunzTarPerm extractEntry lib/explain.js
+924 silly gunzTarPerm extractEntry lib/error.js
+925 silly gunzTarPerm extractEntry lib/encrypter.js
+926 silly gunzTarPerm extractEntry lib/deps.js
+927 silly gunzTarPerm extractEntry lib/db.js
+928 silly gunzTarPerm extractEntry lib/constants.js
+929 silly gunzTarPerm extractEntry lib/connection_string.js
+930 silly gunzTarPerm extractEntry lib/collection.js
+931 silly gunzTarPerm extractEntry lib/change_stream.js
+932 silly gunzTarPerm extractEntry lib/bson.js
+933 silly gunzTarPerm extractEntry lib/beta.js
+934 silly gunzTarPerm extractEntry lib/admin.js
+935 silly gunzTarPerm extractEntry lib/admin.js.map
+936 silly gunzTarPerm extractEntry lib/beta.d.ts
+937 silly gunzTarPerm extractEntry lib/beta.js.map
+938 silly gunzTarPerm extractEntry lib/bson.js.map
+939 silly gunzTarPerm extractEntry lib/bulk/unordered.js
+940 silly gunzTarPerm extractEntry lib/bulk/ordered.js
+941 silly gunzTarPerm extractEntry lib/bulk/common.js
+942 silly gunzTarPerm extractEntry lib/bulk/common.js.map
+943 silly gunzTarPerm extractEntry lib/bulk/ordered.js.map
+944 silly gunzTarPerm extractEntry lib/bulk/unordered.js.map
+945 silly gunzTarPerm extractEntry lib/change_stream.js.map
+946 silly gunzTarPerm extractEntry lib/client-side-encryption/state_machine.js
+947 silly gunzTarPerm extractEntry lib/client-side-encryption/mongocryptd_manager.js
+948 silly gunzTarPerm extractEntry lib/client-side-encryption/errors.js
+949 silly gunzTarPerm extractEntry lib/client-side-encryption/crypto_callbacks.js
+950 silly gunzTarPerm extractEntry lib/client-side-encryption/client_encryption.js
+951 silly gunzTarPerm extractEntry lib/client-side-encryption/auto_encrypter.js
+952 silly gunzTarPerm extractEntry lib/client-side-encryption/auto_encrypter.js.map
+953 silly gunzTarPerm extractEntry lib/client-side-encryption/client_encryption.js.map
+954 silly gunzTarPerm extractEntry lib/client-side-encryption/crypto_callbacks.js.map
+955 silly gunzTarPerm extractEntry lib/client-side-encryption/errors.js.map
+956 silly gunzTarPerm extractEntry lib/client-side-encryption/mongocryptd_manager.js.map
+957 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/index.js
+958 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/gcp.js
+959 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/azure.js
+960 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/aws.js
+961 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/aws.js.map
+962 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/azure.js.map
+963 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/gcp.js.map
+964 silly gunzTarPerm extractEntry lib/client-side-encryption/providers/index.js.map
+965 silly gunzTarPerm extractEntry lib/client-side-encryption/state_machine.js.map
+966 silly gunzTarPerm extractEntry lib/cmap/stream_description.js
+967 silly gunzTarPerm extractEntry lib/cmap/metrics.js
+968 silly gunzTarPerm extractEntry lib/cmap/errors.js
+969 silly gunzTarPerm extractEntry lib/cmap/connection_pool_events.js
+970 silly gunzTarPerm extractEntry lib/cmap/connection_pool.js
+971 silly gunzTarPerm extractEntry lib/cmap/connection.js
+972 silly gunzTarPerm extractEntry lib/cmap/connect.js
+973 silly gunzTarPerm extractEntry lib/cmap/commands.js
+974 silly gunzTarPerm extractEntry lib/cmap/command_monitoring_events.js
+975 silly gunzTarPerm extractEntry lib/cmap/auth/x509.js
+976 silly gunzTarPerm extractEntry lib/cmap/auth/scram.js
+977 silly gunzTarPerm extractEntry lib/cmap/auth/providers.js
+978 silly gunzTarPerm extractEntry lib/cmap/auth/plain.js
+979 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc.js
+980 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_aws.js
+981 silly gunzTarPerm extractEntry lib/cmap/auth/mongo_credentials.js
+982 silly gunzTarPerm extractEntry lib/cmap/auth/gssapi.js
+983 silly gunzTarPerm extractEntry lib/cmap/auth/aws_temporary_credentials.js
+984 silly gunzTarPerm extractEntry lib/cmap/auth/auth_provider.js
+985 silly gunzTarPerm extractEntry lib/cmap/auth/auth_provider.js.map
+986 silly gunzTarPerm extractEntry lib/cmap/auth/aws_temporary_credentials.js.map
+987 silly gunzTarPerm extractEntry lib/cmap/auth/gssapi.js.map
+988 silly gunzTarPerm extractEntry lib/cmap/auth/mongo_credentials.js.map
+989 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_aws.js.map
+990 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/token_machine_workflow.js
+991 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/token_cache.js
+992 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/k8s_machine_workflow.js
+993 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/human_callback_workflow.js
+994 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/gcp_machine_workflow.js
+995 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/command_builders.js
+996 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/callback_workflow.js
+997 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/azure_machine_workflow.js
+998 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/automated_callback_workflow.js
+999 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/automated_callback_workflow.js.map
+1000 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/azure_machine_workflow.js.map
+1001 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/callback_workflow.js.map
+1002 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/command_builders.js.map
+1003 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/gcp_machine_workflow.js.map
+1004 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/human_callback_workflow.js.map
+1005 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/k8s_machine_workflow.js.map
+1006 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/token_cache.js.map
+1007 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc/token_machine_workflow.js.map
+1008 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_oidc.js.map
+1009 silly gunzTarPerm extractEntry lib/cmap/auth/plain.js.map
+1010 silly gunzTarPerm extractEntry lib/cmap/auth/providers.js.map
+1011 silly gunzTarPerm extractEntry lib/cmap/auth/scram.js.map
+1012 silly gunzTarPerm extractEntry lib/cmap/auth/x509.js.map
+1013 silly gunzTarPerm extractEntry lib/cmap/command_monitoring_events.js.map
+1014 silly gunzTarPerm extractEntry lib/cmap/commands.js.map
+1015 silly gunzTarPerm extractEntry lib/cmap/connect.js.map
+1016 silly gunzTarPerm extractEntry lib/cmap/connection.js.map
+1017 silly gunzTarPerm extractEntry lib/cmap/connection_pool.js.map
+1018 silly gunzTarPerm extractEntry lib/cmap/connection_pool_events.js.map
+1019 silly gunzTarPerm extractEntry lib/cmap/errors.js.map
+1020 silly gunzTarPerm extractEntry lib/cmap/handshake/client_metadata.js
+1021 silly gunzTarPerm extractEntry lib/cmap/handshake/client_metadata.js.map
+1022 silly gunzTarPerm extractEntry lib/cmap/metrics.js.map
+1023 silly gunzTarPerm extractEntry lib/cmap/stream_description.js.map
+1024 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/shared.js
+1025 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/responses.js
+1026 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/on_data.js
+1027 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/constants.js
+1028 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/compression.js
+1029 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/compression.js.map
+1030 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/constants.js.map
+1031 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/on_data.js.map
+1032 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/on_demand/document.js
+1033 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/on_demand/document.js.map
+1034 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/responses.js.map
+1035 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/shared.js.map
+1036 silly gunzTarPerm extractEntry lib/collection.js.map
+1037 silly gunzTarPerm extractEntry lib/connection_string.js.map
+1038 silly gunzTarPerm extractEntry lib/constants.js.map
+1039 silly gunzTarPerm extractEntry lib/cursor/run_command_cursor.js
+1040 silly gunzTarPerm extractEntry lib/cursor/list_search_indexes_cursor.js
+1041 silly gunzTarPerm extractEntry lib/cursor/list_indexes_cursor.js
+1042 silly gunzTarPerm extractEntry lib/cursor/list_collections_cursor.js
+1043 silly gunzTarPerm extractEntry lib/cursor/find_cursor.js
+1044 silly gunzTarPerm extractEntry lib/cursor/client_bulk_write_cursor.js
+1045 silly gunzTarPerm extractEntry lib/cursor/change_stream_cursor.js
+1046 silly gunzTarPerm extractEntry lib/cursor/aggregation_cursor.js
+1047 silly gunzTarPerm extractEntry lib/cursor/abstract_cursor.js
+1048 silly gunzTarPerm extractEntry lib/cursor/abstract_cursor.js.map
+1049 silly gunzTarPerm extractEntry lib/cursor/aggregation_cursor.js.map
+1050 silly gunzTarPerm extractEntry lib/cursor/change_stream_cursor.js.map
+1051 silly gunzTarPerm extractEntry lib/cursor/client_bulk_write_cursor.js.map
+1052 silly gunzTarPerm extractEntry lib/cursor/find_cursor.js.map
+1053 silly gunzTarPerm extractEntry lib/cursor/list_collections_cursor.js.map
+1054 silly gunzTarPerm extractEntry lib/cursor/list_indexes_cursor.js.map
+1055 silly gunzTarPerm extractEntry lib/cursor/list_search_indexes_cursor.js.map
+1056 silly gunzTarPerm extractEntry lib/cursor/run_command_cursor.js.map
+1057 silly gunzTarPerm extractEntry lib/db.js.map
+1058 silly gunzTarPerm extractEntry lib/deps.js.map
+1059 silly gunzTarPerm extractEntry lib/encrypter.js.map
+1060 silly gunzTarPerm extractEntry lib/error.js.map
+1061 silly gunzTarPerm extractEntry lib/explain.js.map
+1062 silly gunzTarPerm extractEntry lib/gridfs/upload.js
+1063 silly gunzTarPerm extractEntry lib/gridfs/index.js
+1064 silly gunzTarPerm extractEntry lib/gridfs/download.js
+1065 silly gunzTarPerm extractEntry lib/gridfs/download.js.map
+1066 silly gunzTarPerm extractEntry lib/gridfs/index.js.map
+1067 silly gunzTarPerm extractEntry lib/gridfs/upload.js.map
+1068 silly gunzTarPerm extractEntry lib/index.js.map
+1069 silly gunzTarPerm extractEntry lib/mongo_client.js.map
+1070 silly gunzTarPerm extractEntry lib/mongo_client_auth_providers.js.map
+1071 silly gunzTarPerm extractEntry lib/mongo_logger.js.map
+1072 silly gunzTarPerm extractEntry lib/mongo_types.js.map
+1073 silly gunzTarPerm extractEntry lib/operations/validate_collection.js
+1074 silly gunzTarPerm extractEntry lib/operations/update.js
+1075 silly gunzTarPerm extractEntry lib/operations/stats.js
+1076 silly gunzTarPerm extractEntry lib/operations/set_profiling_level.js
+1077 silly gunzTarPerm extractEntry lib/operations/run_command.js
+1078 silly gunzTarPerm extractEntry lib/operations/rename.js
+1079 silly gunzTarPerm extractEntry lib/operations/remove_user.js
+1080 silly gunzTarPerm extractEntry lib/operations/profiling_level.js
+1081 silly gunzTarPerm extractEntry lib/operations/options_operation.js
+1082 silly gunzTarPerm extractEntry lib/operations/operation.js
+1083 silly gunzTarPerm extractEntry lib/operations/list_databases.js
+1084 silly gunzTarPerm extractEntry lib/operations/list_collections.js
+1085 silly gunzTarPerm extractEntry lib/operations/kill_cursors.js
+1086 silly gunzTarPerm extractEntry lib/operations/is_capped.js
+1087 silly gunzTarPerm extractEntry lib/operations/insert.js
+1088 silly gunzTarPerm extractEntry lib/operations/indexes.js
+1089 silly gunzTarPerm extractEntry lib/operations/get_more.js
+1090 silly gunzTarPerm extractEntry lib/operations/find_and_modify.js
+1091 silly gunzTarPerm extractEntry lib/operations/find.js
+1092 silly gunzTarPerm extractEntry lib/operations/execute_operation.js
+1093 silly gunzTarPerm extractEntry lib/operations/estimated_document_count.js
+1094 silly gunzTarPerm extractEntry lib/operations/drop.js
+1095 silly gunzTarPerm extractEntry lib/operations/distinct.js
+1096 silly gunzTarPerm extractEntry lib/operations/delete.js
+1097 silly gunzTarPerm extractEntry lib/operations/create_collection.js
+1098 silly gunzTarPerm extractEntry lib/operations/count.js
+1099 silly gunzTarPerm extractEntry lib/operations/command.js
+1100 silly gunzTarPerm extractEntry lib/operations/collections.js
+1101 silly gunzTarPerm extractEntry lib/operations/bulk_write.js
+1102 silly gunzTarPerm extractEntry lib/operations/aggregate.js
+1103 silly gunzTarPerm extractEntry lib/operations/aggregate.js.map
+1104 silly gunzTarPerm extractEntry lib/operations/bulk_write.js.map
+1105 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/results_merger.js
+1106 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/executor.js
+1107 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/common.js
+1108 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/command_builder.js
+1109 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/client_bulk_write.js
+1110 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/client_bulk_write.js.map
+1111 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/command_builder.js.map
+1112 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/common.js.map
+1113 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/executor.js.map
+1114 silly gunzTarPerm extractEntry lib/operations/client_bulk_write/results_merger.js.map
+1115 silly gunzTarPerm extractEntry lib/operations/collections.js.map
+1116 silly gunzTarPerm extractEntry lib/operations/command.js.map
+1117 silly gunzTarPerm extractEntry lib/operations/count.js.map
+1118 silly gunzTarPerm extractEntry lib/operations/create_collection.js.map
+1119 silly gunzTarPerm extractEntry lib/operations/delete.js.map
+1120 silly gunzTarPerm extractEntry lib/operations/distinct.js.map
+1121 silly gunzTarPerm extractEntry lib/operations/drop.js.map
+1122 silly gunzTarPerm extractEntry lib/operations/estimated_document_count.js.map
+1123 silly gunzTarPerm extractEntry lib/operations/execute_operation.js.map
+1124 silly gunzTarPerm extractEntry lib/operations/find.js.map
+1125 silly gunzTarPerm extractEntry lib/operations/find_and_modify.js.map
+1126 silly gunzTarPerm extractEntry lib/operations/get_more.js.map
+1127 silly gunzTarPerm extractEntry lib/operations/indexes.js.map
+1128 silly gunzTarPerm extractEntry lib/operations/insert.js.map
+1129 silly gunzTarPerm extractEntry lib/operations/is_capped.js.map
+1130 silly gunzTarPerm extractEntry lib/operations/kill_cursors.js.map
+1131 silly gunzTarPerm extractEntry lib/operations/list_collections.js.map
+1132 silly gunzTarPerm extractEntry lib/operations/list_databases.js.map
+1133 silly gunzTarPerm extractEntry lib/operations/operation.js.map
+1134 silly gunzTarPerm extractEntry lib/operations/options_operation.js.map
+1135 silly gunzTarPerm extractEntry lib/operations/profiling_level.js.map
+1136 silly gunzTarPerm extractEntry lib/operations/remove_user.js.map
+1137 silly gunzTarPerm extractEntry lib/operations/rename.js.map
+1138 silly gunzTarPerm extractEntry lib/operations/run_command.js.map
+1139 silly gunzTarPerm extractEntry lib/operations/search_indexes/update.js
+1140 silly gunzTarPerm extractEntry lib/operations/search_indexes/drop.js
+1141 silly gunzTarPerm extractEntry lib/operations/search_indexes/create.js
+1142 silly gunzTarPerm extractEntry lib/operations/search_indexes/create.js.map
+1143 silly gunzTarPerm extractEntry lib/operations/search_indexes/drop.js.map
+1144 silly gunzTarPerm extractEntry lib/operations/search_indexes/update.js.map
+1145 silly gunzTarPerm extractEntry lib/operations/set_profiling_level.js.map
+1146 silly gunzTarPerm extractEntry lib/operations/stats.js.map
+1147 silly gunzTarPerm extractEntry lib/operations/update.js.map
+1148 silly gunzTarPerm extractEntry lib/operations/validate_collection.js.map
+1149 silly gunzTarPerm extractEntry lib/read_concern.js.map
+1150 silly gunzTarPerm extractEntry lib/read_preference.js.map
+1151 silly gunzTarPerm extractEntry lib/resource_management.js.map
+1152 silly gunzTarPerm extractEntry lib/sdam/topology_description.js
+1153 silly gunzTarPerm extractEntry lib/sdam/topology.js
+1154 silly gunzTarPerm extractEntry lib/sdam/srv_polling.js
+1155 silly gunzTarPerm extractEntry lib/sdam/server_selection_events.js
+1156 silly gunzTarPerm extractEntry lib/sdam/server_selection.js
+1157 silly gunzTarPerm extractEntry lib/sdam/server_description.js
+1158 silly gunzTarPerm extractEntry lib/sdam/server.js
+1159 silly gunzTarPerm extractEntry lib/sdam/monitor.js
+1160 silly gunzTarPerm extractEntry lib/sdam/events.js
+1161 silly gunzTarPerm extractEntry lib/sdam/common.js
+1162 silly gunzTarPerm extractEntry lib/sdam/common.js.map
+1163 silly gunzTarPerm extractEntry lib/sdam/events.js.map
+1164 silly gunzTarPerm extractEntry lib/sdam/monitor.js.map
+1165 silly gunzTarPerm extractEntry lib/sdam/server.js.map
+1166 silly gunzTarPerm extractEntry lib/sdam/server_description.js.map
+1167 silly gunzTarPerm extractEntry lib/sdam/server_selection.js.map
+1168 silly gunzTarPerm extractEntry lib/sdam/server_selection_events.js.map
+1169 silly gunzTarPerm extractEntry lib/sdam/srv_polling.js.map
+1170 silly gunzTarPerm extractEntry lib/sdam/topology.js.map
+1171 silly gunzTarPerm extractEntry lib/sdam/topology_description.js.map
+1172 silly gunzTarPerm extractEntry lib/sessions.js.map
+1173 silly gunzTarPerm extractEntry lib/sort.js.map
+1174 silly gunzTarPerm extractEntry lib/timeout.js.map
+1175 silly gunzTarPerm extractEntry lib/transactions.js.map
+1176 silly gunzTarPerm extractEntry lib/utils.js.map
+1177 silly gunzTarPerm extractEntry lib/write_concern.js.map
+1178 silly gunzTarPerm extractEntry mongodb.d.ts
+1179 silly gunzTarPerm extractEntry src/admin.ts
+1180 silly gunzTarPerm extractEntry src/beta.ts
+1181 silly gunzTarPerm extractEntry src/bson.ts
+1182 silly gunzTarPerm extractEntry src/bulk/common.ts
+1183 silly gunzTarPerm extractEntry src/bulk/ordered.ts
+1184 silly gunzTarPerm extractEntry src/bulk/unordered.ts
+1185 silly gunzTarPerm extractEntry src/change_stream.ts
+1186 silly gunzTarPerm extractEntry src/client-side-encryption/auto_encrypter.ts
+1187 silly gunzTarPerm extractEntry src/client-side-encryption/client_encryption.ts
+1188 silly gunzTarPerm extractEntry src/client-side-encryption/crypto_callbacks.ts
+1189 silly gunzTarPerm extractEntry src/client-side-encryption/errors.ts
+1190 silly gunzTarPerm extractEntry src/client-side-encryption/mongocryptd_manager.ts
+1191 silly gunzTarPerm extractEntry src/client-side-encryption/providers/aws.ts
+1192 silly gunzTarPerm extractEntry src/client-side-encryption/providers/azure.ts
+1193 silly gunzTarPerm extractEntry src/client-side-encryption/providers/gcp.ts
+1194 silly gunzTarPerm extractEntry src/client-side-encryption/providers/index.ts
+1195 silly gunzTarPerm extractEntry src/client-side-encryption/state_machine.ts
+1196 silly gunzTarPerm extractEntry src/cmap/auth/auth_provider.ts
+1197 silly gunzTarPerm extractEntry src/cmap/auth/aws_temporary_credentials.ts
+1198 silly gunzTarPerm extractEntry src/cmap/auth/gssapi.ts
+1199 silly gunzTarPerm extractEntry src/cmap/auth/mongo_credentials.ts
+1200 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_aws.ts
+1201 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/automated_callback_workflow.ts
+1202 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/azure_machine_workflow.ts
+1203 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/callback_workflow.ts
+1204 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/command_builders.ts
+1205 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/gcp_machine_workflow.ts
+1206 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/human_callback_workflow.ts
+1207 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/k8s_machine_workflow.ts
+1208 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/token_cache.ts
+1209 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc/token_machine_workflow.ts
+1210 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_oidc.ts
+1211 silly gunzTarPerm extractEntry src/cmap/auth/plain.ts
+1212 silly gunzTarPerm extractEntry src/cmap/auth/providers.ts
+1213 silly gunzTarPerm extractEntry src/cmap/auth/scram.ts
+1214 silly gunzTarPerm extractEntry src/cmap/auth/x509.ts
+1215 silly gunzTarPerm extractEntry src/cmap/command_monitoring_events.ts
+1216 silly gunzTarPerm extractEntry src/cmap/commands.ts
+1217 silly gunzTarPerm extractEntry src/cmap/connect.ts
+1218 silly gunzTarPerm extractEntry src/cmap/connection.ts
+1219 silly gunzTarPerm extractEntry src/cmap/connection_pool.ts
+1220 silly gunzTarPerm extractEntry src/cmap/connection_pool_events.ts
+1221 silly gunzTarPerm extractEntry src/cmap/errors.ts
+1222 silly gunzTarPerm extractEntry src/cmap/handshake/client_metadata.ts
+1223 silly gunzTarPerm extractEntry src/cmap/metrics.ts
+1224 silly gunzTarPerm extractEntry src/cmap/stream_description.ts
+1225 silly gunzTarPerm extractEntry src/cmap/wire_protocol/compression.ts
+1226 silly gunzTarPerm extractEntry src/cmap/wire_protocol/constants.ts
+1227 silly gunzTarPerm extractEntry src/cmap/wire_protocol/on_data.ts
+1228 silly gunzTarPerm extractEntry src/cmap/wire_protocol/on_demand/document.ts
+1229 silly gunzTarPerm extractEntry src/cmap/wire_protocol/responses.ts
+1230 silly gunzTarPerm extractEntry src/cmap/wire_protocol/shared.ts
+1231 silly gunzTarPerm extractEntry src/collection.ts
+1232 silly gunzTarPerm extractEntry src/connection_string.ts
+1233 silly gunzTarPerm extractEntry src/constants.ts
+1234 silly gunzTarPerm extractEntry src/cursor/abstract_cursor.ts
+1235 silly gunzTarPerm extractEntry src/cursor/aggregation_cursor.ts
+1236 silly gunzTarPerm extractEntry src/cursor/change_stream_cursor.ts
+1237 silly gunzTarPerm extractEntry src/cursor/client_bulk_write_cursor.ts
+1238 silly gunzTarPerm extractEntry src/cursor/find_cursor.ts
+1239 silly gunzTarPerm extractEntry src/cursor/list_collections_cursor.ts
+1240 silly gunzTarPerm extractEntry src/cursor/list_indexes_cursor.ts
+1241 silly gunzTarPerm extractEntry src/cursor/list_search_indexes_cursor.ts
+1242 silly gunzTarPerm extractEntry src/cursor/run_command_cursor.ts
+1243 silly gunzTarPerm extractEntry src/db.ts
+1244 silly gunzTarPerm extractEntry src/deps.ts
+1245 silly gunzTarPerm extractEntry src/encrypter.ts
+1246 silly gunzTarPerm extractEntry src/error.ts
+1247 silly gunzTarPerm extractEntry src/explain.ts
+1248 silly gunzTarPerm extractEntry src/gridfs/download.ts
+1249 silly gunzTarPerm extractEntry src/gridfs/index.ts
+1250 silly gunzTarPerm extractEntry src/gridfs/upload.ts
+1251 silly gunzTarPerm extractEntry src/index.ts
+1252 silly gunzTarPerm extractEntry src/mongo_client.ts
+1253 silly gunzTarPerm extractEntry src/mongo_client_auth_providers.ts
+1254 silly gunzTarPerm extractEntry src/mongo_logger.ts
+1255 silly gunzTarPerm extractEntry src/mongo_types.ts
+1256 silly gunzTarPerm extractEntry src/operations/aggregate.ts
+1257 silly gunzTarPerm extractEntry src/operations/bulk_write.ts
+1258 silly gunzTarPerm extractEntry src/operations/client_bulk_write/client_bulk_write.ts
+1259 silly gunzTarPerm extractEntry src/operations/client_bulk_write/command_builder.ts
+1260 silly gunzTarPerm extractEntry src/operations/client_bulk_write/common.ts
+1261 silly gunzTarPerm extractEntry src/operations/client_bulk_write/executor.ts
+1262 silly gunzTarPerm extractEntry src/operations/client_bulk_write/results_merger.ts
+1263 silly gunzTarPerm extractEntry src/operations/collections.ts
+1264 silly gunzTarPerm extractEntry src/operations/command.ts
+1265 silly gunzTarPerm extractEntry src/operations/count.ts
+1266 silly gunzTarPerm extractEntry src/operations/create_collection.ts
+1267 silly gunzTarPerm extractEntry src/operations/delete.ts
+1268 silly gunzTarPerm extractEntry src/operations/distinct.ts
+1269 silly gunzTarPerm extractEntry src/operations/drop.ts
+1270 silly gunzTarPerm extractEntry src/operations/estimated_document_count.ts
+1271 silly gunzTarPerm extractEntry src/operations/execute_operation.ts
+1272 silly gunzTarPerm extractEntry src/operations/find.ts
+1273 silly gunzTarPerm extractEntry src/operations/find_and_modify.ts
+1274 silly gunzTarPerm extractEntry src/operations/get_more.ts
+1275 silly gunzTarPerm extractEntry src/operations/indexes.ts
+1276 silly gunzTarPerm extractEntry src/operations/insert.ts
+1277 silly gunzTarPerm extractEntry src/operations/is_capped.ts
+1278 silly gunzTarPerm extractEntry src/operations/kill_cursors.ts
+1279 silly gunzTarPerm extractEntry src/operations/list_collections.ts
+1280 silly gunzTarPerm extractEntry src/operations/list_databases.ts
+1281 silly gunzTarPerm extractEntry src/operations/operation.ts
+1282 silly gunzTarPerm extractEntry src/operations/options_operation.ts
+1283 silly gunzTarPerm extractEntry src/operations/profiling_level.ts
+1284 silly gunzTarPerm extractEntry src/operations/remove_user.ts
+1285 silly gunzTarPerm extractEntry src/operations/rename.ts
+1286 silly gunzTarPerm extractEntry src/operations/run_command.ts
+1287 silly gunzTarPerm extractEntry src/operations/search_indexes/create.ts
+1288 silly gunzTarPerm extractEntry src/operations/search_indexes/drop.ts
+1289 silly gunzTarPerm extractEntry src/operations/search_indexes/update.ts
+1290 silly gunzTarPerm extractEntry src/operations/set_profiling_level.ts
+1291 silly gunzTarPerm extractEntry src/operations/stats.ts
+1292 silly gunzTarPerm extractEntry src/operations/update.ts
+1293 silly gunzTarPerm extractEntry src/operations/validate_collection.ts
+1294 silly gunzTarPerm extractEntry src/read_concern.ts
+1295 silly gunzTarPerm extractEntry src/read_preference.ts
+1296 silly gunzTarPerm extractEntry src/resource_management.ts
+1297 silly gunzTarPerm extractEntry src/sdam/common.ts
+1298 silly gunzTarPerm extractEntry src/sdam/events.ts
+1299 silly gunzTarPerm extractEntry src/sdam/monitor.ts
+1300 silly gunzTarPerm extractEntry src/sdam/server.ts
+1301 silly gunzTarPerm extractEntry src/sdam/server_description.ts
+1302 silly gunzTarPerm extractEntry src/sdam/server_selection.ts
+1303 silly gunzTarPerm extractEntry src/sdam/server_selection_events.ts
+1304 silly gunzTarPerm extractEntry src/sdam/srv_polling.ts
+1305 silly gunzTarPerm extractEntry src/sdam/topology.ts
+1306 silly gunzTarPerm extractEntry src/sdam/topology_description.ts
+1307 silly gunzTarPerm extractEntry src/sessions.ts
+1308 silly gunzTarPerm extractEntry src/sort.ts
+1309 silly gunzTarPerm extractEntry src/timeout.ts
+1310 silly gunzTarPerm extractEntry src/transactions.ts
+1311 silly gunzTarPerm extractEntry src/utils.ts
+1312 silly gunzTarPerm extractEntry src/write_concern.ts
+1313 silly gunzTarPerm extractEntry tsconfig.json
+1314 silly lockFile d9bf80da-ibe-appunto-node-modules-mongodb tar:///home/earlgibe/appunto/node_modules/mongodb
+1315 silly lockFile d9bf80da-ibe-appunto-node-modules-mongodb tar:///home/earlgibe/appunto/node_modules/mongodb
+1316 silly lockFile fbff51a7-e-npm-mongodb-6-17-0-package-tgz tar:///home/earlgibe/.npm/mongodb/6.17.0/package.tgz
+1317 silly lockFile fbff51a7-e-npm-mongodb-6-17-0-package-tgz tar:///home/earlgibe/.npm/mongodb/6.17.0/package.tgz
+1318 info preinstall mongodb@6.17.0
+1319 verbose readDependencies using package.json deps
+1320 verbose readDependencies using package.json deps
+1321 verbose cache add [ '@mongodb-js/saslprep@^1.1.9', null ]
+1322 verbose cache add name=undefined spec="@mongodb-js/saslprep@^1.1.9" args=["@mongodb-js/saslprep@^1.1.9",null]
+1323 verbose parsed url Url {
+1323 verbose parsed url   protocol: null,
+1323 verbose parsed url   slashes: null,
+1323 verbose parsed url   auth: null,
+1323 verbose parsed url   host: null,
+1323 verbose parsed url   port: null,
+1323 verbose parsed url   hostname: null,
+1323 verbose parsed url   hash: null,
+1323 verbose parsed url   search: null,
+1323 verbose parsed url   query: null,
+1323 verbose parsed url   pathname: '@mongodb-js/saslprep@%5E1.1.9',
+1323 verbose parsed url   path: '@mongodb-js/saslprep@%5E1.1.9',
+1323 verbose parsed url   href: '@mongodb-js/saslprep@%5E1.1.9'
+1323 verbose parsed url }
+1324 verbose cache add name="" spec="mongodb-js/saslprep@^1.1.9" args=["","mongodb-js/saslprep@^1.1.9"]
+1325 verbose parsed url Url {
+1325 verbose parsed url   protocol: null,
+1325 verbose parsed url   slashes: null,
+1325 verbose parsed url   auth: null,
+1325 verbose parsed url   host: null,
+1325 verbose parsed url   port: null,
+1325 verbose parsed url   hostname: null,
+1325 verbose parsed url   hash: null,
+1325 verbose parsed url   search: null,
+1325 verbose parsed url   query: null,
+1325 verbose parsed url   pathname: 'mongodb-js/saslprep@%5E1.1.9',
+1325 verbose parsed url   path: 'mongodb-js/saslprep@%5E1.1.9',
+1325 verbose parsed url   href: 'mongodb-js/saslprep@%5E1.1.9'
+1325 verbose parsed url }
+1326 verbose cache add name="mongodb-js/saslprep" spec="^1.1.9" args=["mongodb-js/saslprep","^1.1.9"]
+1327 verbose parsed url Url {
+1327 verbose parsed url   protocol: null,
+1327 verbose parsed url   slashes: null,
+1327 verbose parsed url   auth: null,
+1327 verbose parsed url   host: null,
+1327 verbose parsed url   port: null,
+1327 verbose parsed url   hostname: null,
+1327 verbose parsed url   hash: null,
+1327 verbose parsed url   search: null,
+1327 verbose parsed url   query: null,
+1327 verbose parsed url   pathname: '%5E1.1.9',
+1327 verbose parsed url   path: '%5E1.1.9',
+1327 verbose parsed url   href: '%5E1.1.9'
+1327 verbose parsed url }
+1328 verbose addNamed [ 'mongodb-js/saslprep', '^1.1.9' ]
+1329 verbose addNamed [ null, '>=1.1.9-0 <2.0.0-0' ]
+1330 silly lockFile 7ffdd7d0-mongodb-js-saslprep-1-1-9 mongodb-js/saslprep@^1.1.9
+1331 verbose lock mongodb-js/saslprep@^1.1.9 /home/earlgibe/.npm/7ffdd7d0-mongodb-js-saslprep-1-1-9.lock
+1332 verbose cache add [ 'bson@^6.10.4', null ]
+1333 verbose cache add name=undefined spec="bson@^6.10.4" args=["bson@^6.10.4",null]
+1334 verbose parsed url Url {
+1334 verbose parsed url   protocol: null,
+1334 verbose parsed url   slashes: null,
+1334 verbose parsed url   auth: null,
+1334 verbose parsed url   host: null,
+1334 verbose parsed url   port: null,
+1334 verbose parsed url   hostname: null,
+1334 verbose parsed url   hash: null,
+1334 verbose parsed url   search: null,
+1334 verbose parsed url   query: null,
+1334 verbose parsed url   pathname: 'bson@%5E6.10.4',
+1334 verbose parsed url   path: 'bson@%5E6.10.4',
+1334 verbose parsed url   href: 'bson@%5E6.10.4'
+1334 verbose parsed url }
+1335 verbose cache add name="bson" spec="^6.10.4" args=["bson","^6.10.4"]
+1336 verbose parsed url Url {
+1336 verbose parsed url   protocol: null,
+1336 verbose parsed url   slashes: null,
+1336 verbose parsed url   auth: null,
+1336 verbose parsed url   host: null,
+1336 verbose parsed url   port: null,
+1336 verbose parsed url   hostname: null,
+1336 verbose parsed url   hash: null,
+1336 verbose parsed url   search: null,
+1336 verbose parsed url   query: null,
+1336 verbose parsed url   pathname: '%5E6.10.4',
+1336 verbose parsed url   path: '%5E6.10.4',
+1336 verbose parsed url   href: '%5E6.10.4'
+1336 verbose parsed url }
+1337 verbose addNamed [ 'bson', '^6.10.4' ]
+1338 verbose addNamed [ null, '>=6.10.4-0 <7.0.0-0' ]
+1339 silly lockFile f933cc47-bson-6-10-4 bson@^6.10.4
+1340 verbose lock bson@^6.10.4 /home/earlgibe/.npm/f933cc47-bson-6-10-4.lock
+1341 verbose cache add [ 'mongodb-connection-string-url@^3.0.0', null ]
+1342 verbose cache add name=undefined spec="mongodb-connection-string-url@^3.0.0" args=["mongodb-connection-string-url@^3.0.0",null]
+1343 verbose parsed url Url {
+1343 verbose parsed url   protocol: null,
+1343 verbose parsed url   slashes: null,
+1343 verbose parsed url   auth: null,
+1343 verbose parsed url   host: null,
+1343 verbose parsed url   port: null,
+1343 verbose parsed url   hostname: null,
+1343 verbose parsed url   hash: null,
+1343 verbose parsed url   search: null,
+1343 verbose parsed url   query: null,
+1343 verbose parsed url   pathname: 'mongodb-connection-string-url@%5E3.0.0',
+1343 verbose parsed url   path: 'mongodb-connection-string-url@%5E3.0.0',
+1343 verbose parsed url   href: 'mongodb-connection-string-url@%5E3.0.0'
+1343 verbose parsed url }
+1344 verbose cache add name="mongodb-connection-string-url" spec="^3.0.0" args=["mongodb-connection-string-url","^3.0.0"]
+1345 verbose parsed url Url {
+1345 verbose parsed url   protocol: null,
+1345 verbose parsed url   slashes: null,
+1345 verbose parsed url   auth: null,
+1345 verbose parsed url   host: null,
+1345 verbose parsed url   port: null,
+1345 verbose parsed url   hostname: null,
+1345 verbose parsed url   hash: null,
+1345 verbose parsed url   search: null,
+1345 verbose parsed url   query: null,
+1345 verbose parsed url   pathname: '%5E3.0.0',
+1345 verbose parsed url   path: '%5E3.0.0',
+1345 verbose parsed url   href: '%5E3.0.0'
+1345 verbose parsed url }
+1346 verbose addNamed [ 'mongodb-connection-string-url', '^3.0.0' ]
+1347 verbose addNamed [ null, '>=3.0.0-0 <4.0.0-0' ]
+1348 silly lockFile dcfd9724-godb-connection-string-url-3-0-0 mongodb-connection-string-url@^3.0.0
+1349 verbose lock mongodb-connection-string-url@^3.0.0 /home/earlgibe/.npm/dcfd9724-godb-connection-string-url-3-0-0.lock
+1350 silly addNameRange {
+1350 silly addNameRange   name: 'mongodb-js/saslprep',
+1350 silly addNameRange   range: '>=1.1.9-0 <2.0.0-0',
+1350 silly addNameRange   hasData: false
+1350 silly addNameRange }
+1351 silly addNameRange { name: 'bson', range: '>=6.10.4-0 <7.0.0-0', hasData: false }
+1352 verbose url raw mongodb-js/saslprep
+1353 verbose url resolving [ 'https://registry.npmjs.org/', './mongodb-js/saslprep' ]
+1354 verbose url resolved https://registry.npmjs.org/mongodb-js/saslprep
+1355 info trying registry request attempt 1 at 12:58:44 PM
+1356 http GET https://registry.npmjs.org/mongodb-js/saslprep
+1357 silly addNameRange {
+1357 silly addNameRange   name: 'mongodb-connection-string-url',
+1357 silly addNameRange   range: '>=3.0.0-0 <4.0.0-0',
+1357 silly addNameRange   hasData: false
+1357 silly addNameRange }
+1358 verbose url raw mongodb-connection-string-url
+1359 verbose url resolving [ 'https://registry.npmjs.org/', './mongodb-connection-string-url' ]
+1360 verbose url resolved https://registry.npmjs.org/mongodb-connection-string-url
+1361 info trying registry request attempt 1 at 12:58:44 PM
+1362 http GET https://registry.npmjs.org/mongodb-connection-string-url
+1363 verbose url raw bson
+1364 verbose url resolving [ 'https://registry.npmjs.org/', './bson' ]
+1365 verbose url resolved https://registry.npmjs.org/bson
+1366 info trying registry request attempt 1 at 12:58:44 PM
+1367 verbose etag "84ae9074a17f030593a597e2b70fe07f"
+1368 http GET https://registry.npmjs.org/bson
+1369 http 304 https://registry.npmjs.org/bson
+1370 silly registry.get cb [
+1370 silly registry.get   304,
+1370 silly registry.get   {
+1370 silly registry.get     date: 'Mon, 14 Jul 2025 10:58:44 GMT',
+1370 silly registry.get     connection: 'keep-alive',
+1370 silly registry.get     'cf-ray': '95f081b27f87ea5c-FCO',
+1370 silly registry.get     'cf-cache-status': 'HIT',
+1370 silly registry.get     'access-control-allow-origin': '*',
+1370 silly registry.get     age: '11',
+1370 silly registry.get     'cache-control': 'public, max-age=300',
+1370 silly registry.get     etag: '"84ae9074a17f030593a597e2b70fe07f"',
+1370 silly registry.get     'last-modified': 'Mon, 02 Jun 2025 20:56:42 GMT',
+1370 silly registry.get     vary: 'Accept-Encoding',
+1370 silly registry.get     'set-cookie': [
+1370 silly registry.get       '_cfuvid=SOF9fpE8zckqfx.FjzoqkKPvys6yfzgysTl.iqx25XQ-1752490724257-0.0.1.1-604800000; path=/; domain=.npmjs.org; HttpOnly; Secure; SameSite=None'
+1370 silly registry.get     ],
+1370 silly registry.get     server: 'cloudflare'
+1370 silly registry.get   }
+1370 silly registry.get ]
+1371 verbose etag bson from cache
+1372 silly addNameRange number 2 { name: 'bson', range: '>=6.10.4-0 <7.0.0-0', hasData: true }
+1373 silly addNameRange versions [
+1373 silly addNameRange   'bson',
+1373 silly addNameRange   [
+1373 silly addNameRange     '0.0.1',  '0.0.2',     '0.0.3',     '0.0.4',     '0.0.5',  '0.0.6',
+1373 silly addNameRange     '0.0.7',  '0.0.8',     '0.0.9',     '0.1.0',     '0.1.1',  '0.1.3',
+1373 silly addNameRange     '0.1.4',  '0.1.5',     '0.1.6',     '0.1.7',     '0.1.8',  '0.1.9',
+1373 silly addNameRange     '0.2.0',  '0.2.1',     '0.2.2',     '0.2.3',     '0.2.4',  '0.2.5',
+1373 silly addNameRange     '0.2.6',  '0.2.7',     '0.2.8',     '0.2.9',     '0.2.10', '0.2.11',
+1373 silly addNameRange     '0.2.12', '0.2.13',    '0.2.14',    '0.2.15',    '0.2.16', '0.2.17',
+1373 silly addNameRange     '0.2.18', '0.2.19',    '0.2.20',    '0.2.21',    '0.3.0',  '0.3.1',
+1373 silly addNameRange     '0.3.2',  '0.4.0',     '0.4.1',     '0.4.2',     '0.4.3',  '0.4.4',
+1373 silly addNameRange     '0.4.5',  '0.4.6',     '0.4.7',     '0.4.8',     '0.2.22', '0.4.10',
+1373 silly addNameRange     '0.4.12', '0.4.13',    '0.4.14',    '0.4.15',    '0.4.16', '0.4.17',
+1373 silly addNameRange     '0.4.18', '0.4.19',    '0.4.20',    '0.4.21',    '0.4.22', '0.4.23',
+1373 silly addNameRange     '0.5.0',  '0.5.1',     '0.5.2',     '0.5.3',     '0.5.4',  '0.5.5',
+1373 silly addNameRange     '0.5.6',  '0.5.7',     '1.0.0',     '1.0.1',     '1.0.2',  '1.0.3',
+1373 silly addNameRange     '1.0.4',  '2.0.0',     '1.0.5',     '2.0.1',     '2.0.2',  '1.0.6',
+1373 silly addNameRange     '2.0.3',  '2.0.4',     '2.0.5',     '2.0.6',     '2.0.7',  '1.0.7',
+1373 silly addNameRange     '2.0.8',  '1.0.8',     '1.0.9',     '3.0.0',     '3.0.1',  '3.0.2',
+1373 silly addNameRange     '1.1.0',  '4.0.0-rc1', '4.0.0-rc2', '4.0.0-rc3',
+1373 silly addNameRange     ... 74 more items
+1373 silly addNameRange   ]
+1373 silly addNameRange ]
+1374 verbose addNamed [ 'bson', '6.10.4' ]
+1375 verbose addNamed [ '6.10.4', '6.10.4' ]
+1376 silly lockFile d5037437-bson-6-10-4 bson@6.10.4
+1377 verbose lock bson@6.10.4 /home/earlgibe/.npm/d5037437-bson-6-10-4.lock
+1378 silly lockFile cc66046c-y-npmjs-org-bson-bson-6-10-4-tgz https://registry.npmjs.org/bson/-/bson-6.10.4.tgz
+1379 verbose lock https://registry.npmjs.org/bson/-/bson-6.10.4.tgz /home/earlgibe/.npm/cc66046c-y-npmjs-org-bson-bson-6-10-4-tgz.lock
+1380 verbose addRemoteTarball [
+1380 verbose addRemoteTarball   'https://registry.npmjs.org/bson/-/bson-6.10.4.tgz',
+1380 verbose addRemoteTarball   'd530733bb5bb16fb25c162e01a3344fab332fd2b'
+1380 verbose addRemoteTarball ]
+1381 info retry fetch attempt 1 at 12:58:44 PM
+1382 verbose fetch to= /home/earlgibe/tmp/npm-3098-WYxcRVLh/1752490724479-0.961585064735665/tmp.tgz
+1383 http GET https://registry.npmjs.org/bson/-/bson-6.10.4.tgz
+1384 http 200 https://registry.npmjs.org/mongodb-connection-string-url
+1385 silly registry.get cb [
+1385 silly registry.get   200,
+1385 silly registry.get   {
+1385 silly registry.get     date: 'Mon, 14 Jul 2025 10:58:44 GMT',
+1385 silly registry.get     'content-type': 'application/json',
+1385 silly registry.get     'content-length': '115682',
+1385 silly registry.get     connection: 'keep-alive',
+1385 silly registry.get     'cf-ray': '95f081b27a11ea51-FCO',
+1385 silly registry.get     'cf-cache-status': 'HIT',
+1385 silly registry.get     'accept-ranges': 'bytes',
+1385 silly registry.get     'access-control-allow-origin': '*',
+1385 silly registry.get     'cache-control': 'public, max-age=300',
+1385 silly registry.get     etag: '"cbb5ac784d569d7ee855ddf5ecc61bbb"',
+1385 silly registry.get     'last-modified': 'Tue, 21 Jan 2025 19:31:42 GMT',
+1385 silly registry.get     vary: 'accept-encoding, accept',
+1385 silly registry.get     'set-cookie': [
+1385 silly registry.get       '_cfuvid=YqDBtwg9JyuoxkAPK8YjWLTbpvX9PXI5QXLyKi.tTfE-1752490724285-0.0.1.1-604800000; path=/; domain=.npmjs.org; HttpOnly; Secure; SameSite=None'
+1385 silly registry.get     ],
+1385 silly registry.get     server: 'cloudflare'
+1385 silly registry.get   }
+1385 silly registry.get ]
+1386 silly addNameRange number 2 {
+1386 silly addNameRange   name: 'mongodb-connection-string-url',
+1386 silly addNameRange   range: '>=3.0.0-0 <4.0.0-0',
+1386 silly addNameRange   hasData: true
+1386 silly addNameRange }
+1387 silly addNameRange versions [
+1387 silly addNameRange   'mongodb-connection-string-url',
+1387 silly addNameRange   [
+1387 silly addNameRange     '1.0.0', '1.0.1', '1.0.2',
+1387 silly addNameRange     '1.1.0', '1.1.1', '1.1.2',
+1387 silly addNameRange     '2.0.0', '2.1.0', '2.2.0',
+1387 silly addNameRange     '2.3.0', '2.3.1', '2.3.2',
+1387 silly addNameRange     '2.4.0', '2.4.1', '2.4.2',
+1387 silly addNameRange     '2.5.0', '2.5.1', '2.5.2',
+1387 silly addNameRange     '2.5.3', '2.5.4', '2.6.0',
+1387 silly addNameRange     '3.0.0', '3.0.1', '3.0.2'
+1387 silly addNameRange   ]
+1387 silly addNameRange ]
+1388 verbose addNamed [ 'mongodb-connection-string-url', '3.0.2' ]
+1389 verbose addNamed [ '3.0.2', '3.0.2' ]
+1390 silly lockFile ae45831f-godb-connection-string-url-3-0-2 mongodb-connection-string-url@3.0.2
+1391 verbose lock mongodb-connection-string-url@3.0.2 /home/earlgibe/.npm/ae45831f-godb-connection-string-url-3-0-2.lock
+1392 silly lockFile b9377922--connection-string-url-3-0-2-tgz https://registry.npmjs.org/mongodb-connection-string-url/-/mongodb-connection-string-url-3.0.2.tgz
+1393 verbose lock https://registry.npmjs.org/mongodb-connection-string-url/-/mongodb-connection-string-url-3.0.2.tgz /home/earlgibe/.npm/b9377922--connection-string-url-3-0-2-tgz.lock
+1394 verbose addRemoteTarball [
+1394 verbose addRemoteTarball   'https://registry.npmjs.org/mongodb-connection-string-url/-/mongodb-connection-string-url-3.0.2.tgz',
+1394 verbose addRemoteTarball   'e223089dfa0a5fa9bf505f8aedcbc67b077b33e7'
+1394 verbose addRemoteTarball ]
+1395 info retry fetch attempt 1 at 12:58:44 PM
+1396 verbose fetch to= /home/earlgibe/tmp/npm-3098-WYxcRVLh/1752490724579-0.6450539254809/tmp.tgz
+1397 http GET https://registry.npmjs.org/mongodb-connection-string-url/-/mongodb-connection-string-url-3.0.2.tgz
+1398 http 404 https://registry.npmjs.org/mongodb-js/saslprep
+1399 silly registry.get cb [
+1399 silly registry.get   404,
+1399 silly registry.get   {
+1399 silly registry.get     date: 'Mon, 14 Jul 2025 10:58:44 GMT',
+1399 silly registry.get     'content-type': 'application/json',
+1399 silly registry.get     'content-length': '11',
+1399 silly registry.get     connection: 'keep-alive',
+1399 silly registry.get     'cf-ray': '95f081b1fc9bea62-FCO',
+1399 silly registry.get     'access-control-allow-origin': '*',
+1399 silly registry.get     'set-cookie': [
+1399 silly registry.get       '_cfuvid=3M9yavNUMouopBDWTJx5TXxVWfdE1BSMZe1MZZ4X.ZM-1752490724442-0.0.1.1-604800000; path=/; domain=.npmjs.org; HttpOnly; Secure; SameSite=None'
+1399 silly registry.get     ],
+1399 silly registry.get     server: 'cloudflare'
+1399 silly registry.get   }
+1399 silly registry.get ]
+1400 silly addNameRange number 2 {
+1400 silly addNameRange   name: 'mongodb-js/saslprep',
+1400 silly addNameRange   range: '>=1.1.9-0 <2.0.0-0',
+1400 silly addNameRange   hasData: true
+1400 silly addNameRange }
+1401 silly addNameRange versions [ undefined, [] ]
+1402 error TypeError: Cannot read properties of undefined (reading 'latest')
+1402 error     at next (/home/earlgibe/.nvm/versions/node/v20.19.0/lib/node_modules/npm/lib/cache.js:713:35)
+1402 error     at /home/earlgibe/.nvm/versions/node/v20.19.0/lib/node_modules/npm/lib/cache.js:701:5
+1402 error     at saved (/home/earlgibe/.nvm/versions/node/v20.19.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:142:7)
+1402 error     at /home/earlgibe/.nvm/versions/node/v20.19.0/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:133:7
+1402 error     at FSReqCallback.oncomplete (node:fs:188:23)
+1403 error If you need help, you may report this *entire* log,
+1403 error including the npm and node versions, at:
+1403 error     <http://github.com/npm/npm/issues>
+1404 error System Linux 5.15.167.4-microsoft-standard-WSL2
+1405 error command "/home/earlgibe/.nvm/versions/node/v20.19.0/bin/node" "/home/earlgibe/.nvm/versions/node/v20.19.0/bin/npm" "install" "mongodb"
+1406 error cwd /home/earlgibe/appunto
+1407 error node -v v20.19.0
+1408 error npm -v 1.4.2
+1409 verbose exit [ 1, true ]
