@@ -64,7 +64,4 @@ export class User {
 
         return false;
     }
-
-    public logout() {
-    }
 }
