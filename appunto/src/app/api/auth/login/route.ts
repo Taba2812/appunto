@@ -10,9 +10,7 @@ export async function POST(request: Request) {
         const users = db.collection('users');
 
         const { username, password } = await request.json();
-        const user = await users.findOne({
-            username: username.toUpperCase()
-        });
+        const user = await users.findOne({ username: username.toUpperCase() });
 
         if(!user){
             return new Response(
@@ -44,6 +42,6 @@ export async function POST(request: Request) {
         return NextResponse.json(
             { message: 'Database error', error },
             { status: 500 }
-        )
+        );
     }
 }

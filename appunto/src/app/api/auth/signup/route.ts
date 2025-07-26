@@ -11,9 +11,7 @@ export async function POST(request: Request) {
         const { username, password, email } = await request.json();
         const newUser = new User(username, password, email);
 
-        const existingUser = await users.findOne({
-            $or: [ { email: newUser.email }, { username: newUser.username } ]
-        });
+        const existingUser = await users.findOne({ $or: [ { email: newUser.email }, { username: newUser.username } ] });
 
         if(existingUser){
             return new Response(
@@ -22,15 +20,13 @@ export async function POST(request: Request) {
             );
         }
 
-        const result = await users.insertOne(({
-            ...newUser,
-            timestamp: new Date(),
-        }))
+        const result = await users.insertOne(({ ...newUser, timestamp: new Date(), }))
 
         return new Response(JSON.stringify({ _id: result.insertedId, ...newUser }), {
             status: 201,
             headers: { 'Content-Type': 'application/json' }
         });
+
     } catch (error) {
         return NextResponse.json(
             { message: 'Database error', error },
