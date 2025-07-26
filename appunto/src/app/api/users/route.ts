@@ -1,15 +1,12 @@
 import clientPromise from '@/lib/mongodb';
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { Roles } from '@/lib/User';
+import { getUserFromRequest } from '@/middleware';
 
-export async function GET(request: Request) {
+export async function GET(request: NextRequest) {
     try {
-        const userHeader = request.headers.get('x-user-payload');
-        if (!userHeader) {
-            return NextResponse.json({ error: 'Permission denied' }, { status: 401 });
-        }
-
-        const user = JSON.parse(userHeader);
+        const { user, errorResponse } = getUserFromRequest(request);
+        if(errorResponse){ return errorResponse; }
 
         if(user.payload.role == Roles.User){
             return NextResponse.json(

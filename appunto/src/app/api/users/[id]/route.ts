@@ -3,15 +3,12 @@ import { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 import { ObjectId } from 'mongodb';
 import { Roles } from '@/lib/User';
+import { getUserFromRequest } from '@/middleware';
 
 export async function GET(request: NextRequest, { params }: { params: Promise<{ id: string }> },) {
     try {
-        const userHeader = request.headers.get('x-user-payload');
-        if(!userHeader) {
-            return NextResponse.json( { error: 'Permission denied' }, { status: 401 } );
-        }
-
-        const user = JSON.parse(userHeader);
+        const { user, errorResponse } = getUserFromRequest(request);
+        if(errorResponse){ return errorResponse; }
         
         if(user.payload.role != Roles.Admin){
             return NextResponse.json(
@@ -22,7 +19,6 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
 
         const id = (await params).id;
 
-        // Validate ObjectId format
         if (!ObjectId.isValid(id)) {
             return NextResponse.json(
                 { message: 'Invalid user ID format' },
@@ -57,9 +53,17 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
 
 export async function DELETE(request: NextRequest, { params }: { params: Promise<{ id: string }> },) {
     try {
+        const { user, errorResponse } = getUserFromRequest(request);
+        if(errorResponse){ return errorResponse; }
         const id = (await params).id;
 
-        // Validate ObjectId format
+        if(user.payload.role != Roles.Admin){
+            return NextResponse.json(
+                { message: 'Access forbidden'},
+                { status: 403 }
+            )
+        }
+
         if (!ObjectId.isValid(id)) {
             return NextResponse.json(
                 { message: 'Invalid user ID format' },
