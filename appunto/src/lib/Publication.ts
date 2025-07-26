@@ -10,14 +10,15 @@ export enum Visibility {
 export class Publication {
     publisher: ObjectId;
     title: String;
-    //topic: String;
     content: String[];
     visibility: Visibility = Visibility.private;
+    accessList: ObjectId[] = [];
     comments: ObjectId[] = [];
 
-    public constructor(_title: String, _content: String[], _publisher: ObjectId){
+    public constructor(_title: String, _content: String[], _visibility: Visibility, _publisher: ObjectId){
         this.publisher = _publisher;
         this.content = _content;
+        this.visibility = _visibility;
         this.title = _title;
     }
 }
