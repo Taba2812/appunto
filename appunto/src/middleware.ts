@@ -3,6 +3,23 @@ import { jwtVerify } from 'jose';
 
 const JWT_SECRET = new TextEncoder().encode(process.env.JWT_SECRET);
 
+export function getUserFromRequest(request: NextRequest){
+    const userHeader = request.headers.get('x-user-payload');
+    if(!userHeader){
+        return { user: null, errorResponse: NextResponse.json(
+            { error: 'Permission denied' },
+            { status: 401 }
+        ) };
+    }
+
+    try {
+        const user = JSON.parse(userHeader);
+        return { user, errorResponse: null };
+    } catch {
+        return { user: null, errorResponse: NextResponse.json({ error: 'Invalid user header' }, { status: 400 }) };
+    }
+}
+
 export async function middleware(req: NextRequest) {
 
     if(req.nextUrl.pathname.endsWith('/auth/login') || req.nextUrl.pathname.endsWith('/auth/signup')) {
