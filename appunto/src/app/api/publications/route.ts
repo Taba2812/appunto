@@ -1,24 +1,21 @@
 import clientPromise from '@/lib/mongodb';
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { Publication } from '@/lib/Publication';
 import { ObjectId } from 'mongodb';
+import { getUserFromRequest } from '@/middleware';
 
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
     try{
-        const userHeader = request.headers.get('x-user-payload');
-        if(!userHeader) {
-            return NextResponse.json( { error: 'Permission denied' }, { status: 401 } );
-        }
-
-        const user = JSON.parse(userHeader);
+        const { user, errorResponse } = getUserFromRequest(request);
+        if(errorResponse){ return errorResponse; }
 
         const client = await clientPromise;
         const db = client.db('appunto');
         const users = db.collection('users');
         const publications = db.collection('publications');
 
-        const { title, content } = await request.json();
-        const newPublication = new Publication(title, content, new ObjectId(user.payload.userId));
+        const { title, content, visibility } = await request.json();
+        const newPublication = new Publication(title, content, visibility, new ObjectId(user.payload.userId));
 
         const insertedPublication = await publications.insertOne(({
             ...newPublication,
@@ -43,14 +40,10 @@ export async function POST(request: Request) {
     }
 }
 
-export async function GET(request: Request) {
+export async function GET(request: NextRequest) {
     try {
-        const userHeader = request.headers.get('x-user-payload');
-        if (!userHeader) {
-            return NextResponse.json({ error: 'Permission denied' }, { status: 401 });
-        }
-
-        const user = JSON.parse(userHeader);
+        const { user, errorResponse } = getUserFromRequest(request);
+        if(errorResponse){ return errorResponse; }
 
         const client = await clientPromise;
         const db = client.db('appunto');
