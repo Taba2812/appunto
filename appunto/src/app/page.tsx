@@ -1,7 +1,12 @@
-export default function Page() {
+'use client'
+
+import { useRouter } from "next/navigation"
+
+export default function Cover() {
+    const router = useRouter();
+
     return  <div className="label">
-                <h1 className="appunto">appunto.</h1>
-                <p>Share culture with friends</p>
-                <button>Open</button>
+                <span className="label-appunto">appunto: share culture with friends</span>
+                <span className="label-description" onClick={() => router.push('/login')}>OPEN</span>
             </div>
 }

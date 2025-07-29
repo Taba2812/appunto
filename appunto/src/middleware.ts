@@ -26,10 +26,6 @@ export function getUserFromRequest(request: NextRequest) {
 export async function middleware(request: NextRequest) {
     const { pathname } = request.nextUrl;
 
-    if(pathname === '/'){
-        return NextResponse.next()
-    }
-
     const isApiRoute = pathname.startsWith('/api');
 
     //API Routes
@@ -56,15 +52,15 @@ export async function middleware(request: NextRequest) {
     }
 
     //Pages Route
-    const token = request.cookies.get('authToken')?.value;
-    if(!token){
-        return NextResponse.redirect(new URL('/login', request.url));
-    }
-
-    const publicPaths = ['/login', '/signup'];
+    const publicPaths = ['/', '/login', '/signup'];
     const isPublicPath = publicPaths.includes(pathname);
 
-    if (!isPublicPath) {
+    if (isPublicPath) {
+        return NextResponse.next();
+    }
+
+    const token = request.cookies.get('authToken')?.value;
+    if(!token){
         return NextResponse.redirect(new URL('/login', request.url));
     }
 
