@@ -33,6 +33,16 @@ export async function POST(request: Request) {
             { expiresIn: '7d' }
         );
 
+        const response = NextResponse.json({ message: 'Login successful' });
+        response.cookies.set({
+            name: 'authToken',
+            value: token,
+            httpOnly: true,
+            secure: process.env.NODE_ENV === 'production',
+            path: '/',
+            maxAge: 60 * 60 * 24 * 7,
+        });
+
         return new Response(
             JSON.stringify( { message: "Login successful", token } ),
             { status: 200, headers: { 'Content-Type': 'application/json' } }

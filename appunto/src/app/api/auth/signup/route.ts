@@ -8,8 +8,15 @@ export async function POST(request: Request) {
         const db = client.db('appunto');
         const users = db.collection('users');
 
-        const { username, password, email } = await request.json();
+        const { username, password, confirmPassword, email } = await request.json();
         const newUser = new User(username, password, email);
+
+        if(password !== confirmPassword){
+            return new Response(
+                JSON.stringify({ message: 'Password and confirm password do not coincide' }),
+                { status: 401, headers: {'Content-Type': 'application/json'} }
+            );
+        }
 
         const existingUser = await users.findOne({ $or: [ { email: newUser.email }, { username: newUser.username } ] });
 
