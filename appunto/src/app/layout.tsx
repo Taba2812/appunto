@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={isHome ? 'notebook-cover' : 'notebook-background min-h-screen m-0 p-0 text-black'}>
         <header>
-            {!isHome && (<Link href="/" className="appunto-logo">appunto.</Link>)}
+            {!isHome && (<Link href="/front" className="appunto-logo">appunto.</Link>)}
         </header>
         <main>
             {children}

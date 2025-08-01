@@ -1,7 +1,8 @@
 @import 'tailwindcss';
 
 body {
-  font-family: 'Courier', sans-serif;
+    font-family: 'Courier', sans-serif;
+    font-size: 20px;
 }
 
 .notebook-cover {
@@ -70,6 +71,7 @@ body {
     background-size: 2px 100%, 100% 2px, 100% 25px;
     background-repeat: no-repeat, no-repeat, repeat;
 }
+
 .notebook-content {
     line-height: 25px;
     padding-top: 100px;
@@ -84,9 +86,26 @@ body {
     text-decoration: none;
     display: inline-block;
     transition: color 0.3s ease;
+    cursor: pointer;
 }
 
 .appunto-logo:hover {
     color: grey;
     cursor: pointer;
+}
+
+.user {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+h1:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer
 }

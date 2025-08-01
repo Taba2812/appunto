@@ -1,0 +1,17 @@
+.logout {
+    position: absolute;
+    right: 50px;
+    top: 75px;
+}
+
+.logout:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+h1:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+}
