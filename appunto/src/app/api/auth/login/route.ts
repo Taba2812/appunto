@@ -1,9 +1,9 @@
 import clientPromise from '@/lib/mongodb';
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
     try {
         const client = await clientPromise;
         const db = client.db('appunto');
@@ -43,10 +43,7 @@ export async function POST(request: Request) {
             maxAge: 60 * 60 * 24 * 7,
         });
 
-        return new Response(
-            JSON.stringify( { message: "Login successful", token } ),
-            { status: 200, headers: { 'Content-Type': 'application/json' } }
-        );
+        return response;
 
     } catch(error) {
         return NextResponse.json(
