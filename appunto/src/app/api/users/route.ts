@@ -1,10 +1,10 @@
 import clientPromise from '@/lib/mongodb';
 import { NextRequest, NextResponse } from 'next/server';
-import { getUserFromRequest } from '@/middleware';
+import { getUserFromCookies } from '@/middleware';
 
 export async function GET(request: NextRequest) {
     try {
-        const { user, errorResponse } = getUserFromRequest(request);
+        const { user, errorResponse } = await getUserFromCookies(request);
         if(errorResponse){ return errorResponse; }
 
         const client = await clientPromise;

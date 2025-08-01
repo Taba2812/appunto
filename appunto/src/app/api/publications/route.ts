@@ -2,11 +2,11 @@ import clientPromise from '@/lib/mongodb';
 import { NextRequest, NextResponse } from 'next/server';
 import { Publication } from '@/lib/Publication';
 import { ObjectId } from 'mongodb';
-import { getUserFromRequest } from '@/middleware';
+import { getUserFromCookies } from '@/middleware';
 
 export async function POST(request: NextRequest) {
     try{
-        const { user, errorResponse } = getUserFromRequest(request);
+        const { user, errorResponse } = await getUserFromCookies(request);
         if(errorResponse){ return errorResponse; }
 
         const client = await clientPromise;
@@ -14,8 +14,9 @@ export async function POST(request: NextRequest) {
         const users = db.collection('users');
         const publications = db.collection('publications');
 
-        const { title, content, visibility } = await request.json();
-        const newPublication = new Publication(title, content, visibility, new ObjectId(user.payload.userId));
+        const { title, content } = await request.json();
+        const userId = user.payload.userId as string;
+        const newPublication = new Publication(title, content, new ObjectId(userId));
 
         const insertedPublication = await publications.insertOne(({
             ...newPublication,
@@ -25,7 +26,7 @@ export async function POST(request: NextRequest) {
         const publicationId = new ObjectId(insertedPublication.insertedId);
         
         const updatedUser = await users.updateOne(
-            { _id: new ObjectId(user.payload.userId) }, { $addToSet: { publications: publicationId } }
+            { _id: new ObjectId(userId) }, { $addToSet: { publications: publicationId } }
         );
 
         return new Response(JSON.stringify({ _id: insertedPublication.insertedId, ...newPublication }), {
@@ -42,15 +43,16 @@ export async function POST(request: NextRequest) {
 
 export async function GET(request: NextRequest) {
     try {
-        const { user, errorResponse } = getUserFromRequest(request);
+        const { user, errorResponse } = await getUserFromCookies(request);
         if(errorResponse){ return errorResponse; }
 
         const client = await clientPromise;
         const db = client.db('appunto');
         const publications = db.collection('publications');
 
+        const userId = user.payload.userId as string;
         const userPublicationIds = await publications.find(
-            { publisher: new ObjectId(user.payload.userId) },
+            { publisher: new ObjectId(userId) },
             { projection: { title: 1} }
         ).toArray();
 

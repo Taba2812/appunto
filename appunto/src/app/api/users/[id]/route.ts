@@ -3,19 +3,12 @@ import { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 import { ObjectId } from 'mongodb';
 import { Roles } from '@/lib/User';
-import { getUserFromRequest } from '@/middleware';
+import { getUserFromCookies } from '@/middleware';
 
 export async function GET(request: NextRequest, { params }: { params: Promise<{ id: string }> },) {
     try {
-        const { user, errorResponse } = getUserFromRequest(request);
+        const { user, errorResponse } = await getUserFromCookies(request);
         if(errorResponse){ return errorResponse; }
-        
-        if(user.payload.role != Roles.Admin){
-            return NextResponse.json(
-                { message: 'Access forbidden'},
-                { status: 403 }
-            )
-        }
 
         const id = (await params).id;
 
@@ -53,7 +46,7 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
 
 export async function DELETE(request: NextRequest, { params }: { params: Promise<{ id: string }> },) {
     try {
-        const { user, errorResponse } = getUserFromRequest(request);
+        const { user, errorResponse } = await getUserFromCookies(request);
         if(errorResponse){ return errorResponse; }
         const id = (await params).id;
 
