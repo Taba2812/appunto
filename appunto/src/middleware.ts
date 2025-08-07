@@ -1,7 +1,29 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { jwtVerify } from 'jose';
+import path from 'path';
 
 const JWT_SECRET = new TextEncoder().encode(process.env.JWT_SECRET);
+
+export async function getUserFromCookies(request: NextRequest){
+    const token = request.cookies.get('authToken')?.value;
+
+    if(!token){
+        return {
+            user: null,
+            errorResponse: NextResponse.json({ error: 'Unauthorized' }, { status: 401 }),
+        };
+    }
+
+    try {
+        const user = await jwtVerify(token, JWT_SECRET);
+        return { user, errorResponse: null };
+    } catch {
+        return {
+            user: null,
+            errorResponse: NextResponse.json({ error: 'Invalid token' }, { status: 401 }),
+        };
+    }
+}
 
 export function getUserFromRequest(request: NextRequest) {
     const userHeader = request.headers.get('x-user-payload');
@@ -26,36 +48,29 @@ export function getUserFromRequest(request: NextRequest) {
 export async function middleware(request: NextRequest) {
     const { pathname } = request.nextUrl;
 
-    const isApiRoute = pathname.startsWith('/api');
+    // const publicPaths = ['/'];
+    // const isPublicPath = publicPaths.includes(pathname);
 
-    //API Routes
-    if(isApiRoute){
-        const authHeader = request.headers.get('authorization');
+    // if (isPublicPath) {
+    //     return NextResponse.next();
+    // }
 
-        if (!authHeader?.startsWith('Bearer ')) {
-            return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    if(pathname === '/'){
+        const token = request.cookies.get('authToken')?.value;
+
+        if(token){
+            try {
+                await jwtVerify(token, JWT_SECRET);
+                return NextResponse.redirect(new URL('/front', request.url));
+            } catch(error) {
+                return NextResponse.next();
+            }
         }
 
-        const token = authHeader.split(' ')[1];
-
-        try {
-            const payload = await jwtVerify(token, JWT_SECRET);
-
-            const requestHeaders = new Headers(request.headers);
-            requestHeaders.set('x-user-payload', JSON.stringify(payload));
-
-            return NextResponse.next({ request: { headers: requestHeaders } });
-        } catch (error) {
-            console.error('Invalid token', error);
-            return NextResponse.json({ error: 'Invalid token' }, { status: 403 });
-        }
+        return NextResponse.next();
     }
 
-    //Pages Route
-    const publicPaths = ['/', '/login', '/signup'];
-    const isPublicPath = publicPaths.includes(pathname);
-
-    if (isPublicPath) {
+    if(pathname.endsWith('/login') || pathname.endsWith('/register') || pathname.endsWith('/logout')){
         return NextResponse.next();
     }
 

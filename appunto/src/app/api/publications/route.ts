@@ -51,14 +51,17 @@ export async function GET(request: NextRequest) {
         const publications = db.collection('publications');
 
         const userId = user.payload.userId as string;
-        const userPublicationIds = await publications.find(
+        const userPublications = await publications.find(
             { publisher: new ObjectId(userId) },
             { projection: { title: 1} }
         ).toArray();
 
-        console.log(userPublicationIds);
+        const formattedPublications = userPublications.map(c => ({
+            id: c._id.toString(),
+            title: c.title,
+        }));
 
-        return NextResponse.json(userPublicationIds, { status: 200 });
+        return NextResponse.json(formattedPublications, { status: 200 });
     } catch (error) {
         return NextResponse.json(
             { message: 'Database error', error },

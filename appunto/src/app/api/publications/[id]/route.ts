@@ -99,7 +99,7 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
         if (!publication) { return NextResponse.json( { message: 'Publication not found' }, { status: 404 }); }
 
         const isPublisher = user.payload.userId.toString() === publication.publisher.toString();
-        const hasAccess = publication.accessList.some((id: ObjectId) => id.toString() === user.payload.userId.toString() )
+        const hasAccess = publication.accessList.some((id: ObjectId) => id.toString() === user.payload.userId.toString());
 
         if(!isPublisher && !hasAccess){
             return NextResponse.json( { error: 'Permission denied' }, { status: 403 } );

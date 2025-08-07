@@ -2,7 +2,6 @@
 
 import { useRouter } from 'next/navigation'
 import { useEffect, useState } from "react";
-import { core } from 'zod';
 
 type Correspondent = {
     id: string;
@@ -54,7 +53,7 @@ export default function Correspondents(){
                 </h1>
             </div>
             <div className='flex justify-center pt-[20px]'>
-                <h1 className=" font-bold">CORRESPONDENTS</h1>
+                <h1 className="font-bold">CORRESPONDENTS</h1>
             </div>
             <div className="flex items-start justify-center">
                 {loading && <p className="text-gray-500">Loading correspondents...</p>}

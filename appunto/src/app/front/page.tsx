@@ -53,7 +53,7 @@ export default function Front() {
                 </div>
             </div>
             <div className='flex items-start justify-center pt-[125px]'>
-                <h1>Publications</h1>
+                <h1 onClick={() => router.push('/publications')}>Publications</h1>
             </div>
             <div className='flex items-start justify-center pt-[45px]'>
                 <h1>Circles</h1>
